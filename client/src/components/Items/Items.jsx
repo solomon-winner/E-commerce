@@ -1,14 +1,18 @@
-import {Data} from "../../DummyData";
-
+import {List} from "../../DummyData";
+import Item from  "../Item/Item.jsx"
+import "./Items.css"
 const Items = () => {
-    const render = Data;
+     console.log(List)
 return (
     <div className="Items">
         <div className="items-wrap">
-            {render.map((item, index)  => (
+        {List.map(I => <Item key = {I.id} item = {I}/> )}
+
+            {/* {Data.map((item, index)  => (
             <div className="item">
                 <div className="item-top">
                     <img src= "" alt="" />
+                   
                 </div>
                 <div className="item-mid"></div>
                 <div className="item-bottom"></div>
@@ -16,7 +20,7 @@ return (
             ))
                
 }
-            
+             */}
         </div>
     </div>
 )

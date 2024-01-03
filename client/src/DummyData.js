@@ -1,12 +1,13 @@
 import Nike from "./assets/icons/Nike.jpg"
-export const Items = [
+export const List = [
     {
         id: 1,
         pic:"./Items/item1.jpg",
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
 
     {
@@ -15,7 +16,9 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
+
     },
    
     
@@ -25,7 +28,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -34,8 +38,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
-    },
+        profile:{Nike},
+        date:"12/03/2022" },
    
     {
         id: 5,
@@ -43,7 +47,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -52,7 +57,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -61,7 +67,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -70,7 +77,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -79,7 +87,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -88,7 +97,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -97,7 +107,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -106,7 +117,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -115,7 +127,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -124,7 +137,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -133,7 +147,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -142,7 +157,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -151,7 +167,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -160,7 +177,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -169,7 +187,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -178,7 +197,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -187,7 +207,8 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
     {
@@ -196,7 +217,9 @@ export const Items = [
         desc: "lorem ipsum nvkshdf jdfk jksdhfbs jnkhsbfhid kidjkas fos dg ks fkgd ",
         price: "$56",
         seller: "Nike",
-        profile:{Nike}
+        profile:{Nike},
+        date:"12/03/2022"
     },
    
 ]
+export const sellers = []

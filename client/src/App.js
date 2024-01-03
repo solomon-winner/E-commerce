@@ -1,6 +1,7 @@
 import './App.css';
 // import Banner from './components/Banner/banner';
 import Nav from "./components/navbar/Navbar.jsx";
+import Items from './components/Items/Items';
 // import Banner1 from "./assets/img/banner1.jpg"
 // import Banner2 from "./assets/img/banner2.jpg"
 // import Banner3 from "./assets/img/banner3.jpg"
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
      <Nav/>
+     <Items/>
      {/* <Banner images = {images} interval={3000}/> */}
     </div>
   );

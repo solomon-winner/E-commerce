@@ -1,0 +1,89 @@
+.item{
+    display:flex;
+    width:100%;    
+}
+.item img {
+   margin: 15px;
+    width: 15px; 
+}
+/* .item-wrapper{
+    width:50%;
+    box-shadow: 0 0 .5rem rgb(0, 0, 0);
+}
+.wrap{
+   margin:3%; 
+}
+
+.item-Name{
+    
+    display:flex;
+    justify-content: space-between;
+}
+.Dots{
+    border:2px solid black;
+    margin:50%; 
+    border-radius:50%;
+}
+.dots{
+display:block;
+cursor:pointer;
+}
+.spans{
+    width:700px;
+    display:flex;
+    align-items:center;
+}
+.spans img{
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    object-fit:cover;
+}
+.span-name{
+    font-weight: 300;
+    font-size: bold;
+    padding:1%;
+}
+.span-time{
+    color:rgb(128, 122, 122);
+}
+.itemed-image{
+    width:100%;
+    height:100%;
+}
+.item-bottom{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.LH{
+    display:flex;
+    align-items:center;
+    width:50%;
+}
+.LH span , .comments{
+    color:rgb(114, 111, 111)
+}
+.like{
+    background-color: rgb(60, 60, 182);
+    width:fit-content
+}
+.heart{
+    background-color: red;
+    
+}
+.LH div{
+    margin-right: 1%;
+    padding:1%;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+.LH div img{
+    width:24px;
+    height:24px;
+    padding: 3px;
+} */
