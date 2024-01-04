@@ -1,10 +1,13 @@
 .item{
     display:flex;
-    width:100%;    
+    width:10%;    
 }
 .item img {
    margin: 15px;
-    width: 15px; 
+    width: 100%; 
+}
+.item-data{
+    display:flex;
 }
 /* .item-wrapper{
     width:50%;
