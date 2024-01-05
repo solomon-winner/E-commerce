@@ -1,33 +1,48 @@
 import "./navbar.css"
-import Home from "../../assets/icons/house-solid.svg"
-import Cart from "../../assets/icons/cart-shopping-solid.svg"
-import Gift from "../../assets/icons/gift-solid.svg";
-import Wish from "../../assets/icons/heart-solid.svg";
-import Bell from "../../assets/icons/bell-solid.svg";
-import Comments from "../../assets/icons/comment-solid.svg";
-import Pro from "../../assets/img/pro.png";
-import Logo from "../../assets/icons/logo.svg"
+
 const Navbar = () => {
     return (
         
-        <div className="navbar">
-        <img src= {Logo} alt="logo" />
-        <div className="left">
-           <img src= {Home} alt=""/>
-            <img src= {Cart} alt="cart"/>
-            <div className="cart"></div>
-            <img src= {Gift} alt=""/>
-            <div className="gift"></div>
-            <img src= {Wish} alt="wishList"/>
-            <div className="wish"></div>
-            <img src= {Bell} alt="notification"/>
-            <div className="bell"></div>
-            <img src= {Comments} alt="message"/>
-            <div className="comment"></div>
-             <div className="profile">
-            <img src= {Pro} alt="profile"/>
+        <div id="page" class="site">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <ul class="flexitem main-links">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Featured products</a></li>
+                                <li><a href="#">wishlist</a></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem">
+                                <li class="main-links">
+                                    <li><a href="#">Sign Up</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Order Tracking</a></li>
+                                    <li><a href="#">USD <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                    <ul>
+                                        <li class="current"><a href="#">USD</a></li>
+                                        <li><a href="#">BIRR</a></li>
+                                        <li><a href="#">GBR</a></li>
+                                        <li><a href="#">EURO</a></li>
+                                    </ul>
+                                    </li>
+                                    <li><a href="#">English <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                    <ul>
+                                        <li class="current"><a href="#">English</a></li>
+                                        <li><a href="#">Amharic</a></li>
+                                        <li><a href="#">Oromifa</a></li>
+                                    </ul>
+                                    </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </header>
         </div>
     
     )
