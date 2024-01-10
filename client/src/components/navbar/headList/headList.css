@@ -690,7 +690,7 @@ i{
         background-size: auto;
     }
     /*Showing the first sub menu*/
-    .dpt-menu  .mega {
+    /* .dpt-menu  .mega {
         display: block;
     }
     .dpt-menu .beauty ul{
@@ -704,7 +704,7 @@ i{
     }
     .dpt-menu .home-kit .mega{
         background-image: url(./assets/img/banner4.jpg);
-    }
+    } */
     .dpt-menu .has-child > :where(ul, .mega)::before {
         content: '';
         position: absolute;
