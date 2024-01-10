@@ -1,0 +1,7 @@
+.mega .flexcol {
+    flex: 1;
+    min-width: 188px;
+    padding-right:2.5em;
+    margin-bottom:1.5em;
+    z-index: 1;
+}

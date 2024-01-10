@@ -1,6 +1,8 @@
 import "./headList.css"
 import Cart from "../../../assets/icons/cart-shopping-solid.svg"
 import Heart from "../../../assets/icons/heart-solid.svg"
+import Mega from "../Mega/Mega"
+
 const HeadList = () => {
     return (
         <div className="headList">
@@ -19,7 +21,7 @@ const HeadList = () => {
                             <div className ="icon-small"><i className ="ri-arrow-down-s-line"></i></div>
 
                             </a>
-
+                            <Mega/>
                             </li>
                             <li><a href = "#">Men</a></li>
                             <li>
