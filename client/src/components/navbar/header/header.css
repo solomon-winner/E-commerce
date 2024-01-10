@@ -134,9 +134,7 @@ h4 {
 .header-top li:hover ul{
     display: block;
 }
-/* .mobile-hide {
-    display: none;
-} */
+
 .object-cover img {
     position: absolute;
     object-fit: cover;
