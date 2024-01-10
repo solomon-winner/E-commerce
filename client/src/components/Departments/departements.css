@@ -1,0 +1,35 @@
+.departements {
+    position: relative;
+    z-index: 10;
+}
+.departements .dpt-head {
+    position: relative;
+    width: 300px;
+    padding: 0.75em 1.5em;
+    background-color: var(--primary-color);
+    border-radius: 7px 7px 0 0;
+    color: var(--white-color);
+    margin-bottom: -2.15em;
+}
+.departements .dpt-head .mini-text {
+    color: var(--light-bg-color);
+}
+.departements .dpt-trigger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1.3em;
+    height:60px;
+    width: 60px;
+}
+.dpt-menu > ul > li > a {
+    font-size: var(--font-small);
+    height: 46px;
+    align-items: center;
+}
+.dpt-menu .has-child:hover ul {
+    display:block;
+}
+.dpt-menu .has-child li a:hover {
+    text-decoration: underline;
+}
