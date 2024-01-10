@@ -91,6 +91,7 @@ nav .fly-item {
 img {
     position: relative;
 }
+
 .item-number {
     border-radius:50%;
     width:20px;
@@ -98,4 +99,5 @@ img {
     align-items: center;
     justify-content: center;
     position:absolute;
+    display: none;
 }

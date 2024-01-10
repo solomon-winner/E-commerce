@@ -34,12 +34,12 @@ const HeadList = () => {
                     <ul className = "flexitem second-links">
                         <li className   = " mobile-hide "><a href = "#">
                             <div className = "icon-large"><img src= {Heart} alt="" /></div>
-                            <div className = "fly-item"><span className = "item-number">0</span></div>
+                            {/* <div className = "fly-item"><span className = "item-number">0</span></div> */}
                         </a></li>
                         <li><a href ="#" className   = "iscart">
                             <div className = "icon-large">
                                 <img src= {Cart} alt="" />
-                                <div className = "fly-item"><span className = "item-number">0</span></div>
+                                {/* <div className = "fly-item"><span className = "item-number">0</span></div> */}
 
                             </div>
                             <div className = "icon-text">
