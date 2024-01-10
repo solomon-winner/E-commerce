@@ -1,8 +1,7 @@
 import "./departements.css"
 const Departments = () => {
     return (
-        <div className="departements">
-            <div class="left dpt-cat">
+        <div className="left departements">
                         
                         <div class="dpt-head">
                             <div class="main-text">All Depatements</div>
@@ -117,7 +116,6 @@ const Departments = () => {
 </li>
                         </ul>
                     </div>
-                </div>
                 </div>
                     
     )
