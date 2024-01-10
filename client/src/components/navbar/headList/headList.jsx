@@ -1,28 +1,29 @@
 import "./headList.css"
-
+import Cart from "../../../assets/icons/cart-shopping-solid.svg"
+import Heart from "../../../assets/icons/heart-solid.svg"
 const HeadList = () => {
     return (
         <div className="headList">
             
         <div className ="container">
             <div className ="wrapper flexitem">
-                <a href="" className ="trigger desktop-hide"><span className ="i ri-menu-2-line"></span></a>
+                <a href = "/" className ="trigger desktop-hide"><span className ="i ri-menu-2-line"></span></a>
                 <div className ="left flexitem">
-                    <div className ="logo"><a href="/"><span className ="circle"></span>.suk</a></div>
+                    <div className ="logo"><a href = "#"><span className ="circle"></span>.suk</a></div>
                     <nav className ="mobile-hide">
                         <ul className ="flexitem second-links">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">shope</a></li>
+                            <li><a href = "#">Home</a></li>
+                            <li><a href = "#">shope</a></li>
                             <li className  = "has-child">
-                                <a href="#">Women
+                                <a href = "#">Women
                             <div className ="icon-small"><i className ="ri-arrow-down-s-line"></i></div>
 
                             </a>
 
                             </li>
-                            <li><a href="#">Men</a></li>
+                            <li><a href = "#">Men</a></li>
                             <li>
-                                <a  href="#">Sports
+                                <a  href = "#">Sports
                                 <div className = "fly-item"><span>New!</span></div>
                             </a></li>
 
@@ -31,13 +32,13 @@ const HeadList = () => {
                 </div>
                 <div className = "right">
                     <ul className = "flexitem second-links">
-                        <li className   = " mobile-hide "><a href="">
-                            <div className = "icon-large"><i className = "ri-heart-line"></i></div>
+                        <li className   = " mobile-hide "><a href = "#">
+                            <div className = "icon-large"><Heart/></div>
                             <div className = "fly-item"><span className = "item-number">0</span></div>
                         </a></li>
-                        <li><a href="" className   = "iscart">
+                        <li><a href ="#" className   = "iscart">
                             <div className = "icon-large">
-                                <i className = "ri-shopping-cart-line"></i>
+                                <img src= {Cart} alt="" />
                                 <div className = "fly-item"><span className = "item-number">0</span></div>
 
                             </div>
