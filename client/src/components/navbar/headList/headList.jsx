@@ -33,7 +33,7 @@ const HeadList = () => {
                 <div className = "right">
                     <ul className = "flexitem second-links">
                         <li className   = " mobile-hide "><a href = "#">
-                            <div className = "icon-large"><Heart/></div>
+                            <div className = "icon-large"><img src= {Heart} alt="" /></div>
                             <div className = "fly-item"><span className = "item-number">0</span></div>
                         </a></li>
                         <li><a href ="#" className   = "iscart">
