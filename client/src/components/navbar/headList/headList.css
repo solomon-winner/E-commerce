@@ -1,0 +1,65 @@
+.headList .right {
+    position: relative;
+    margin-left: auto;
+}
+.headList .right .icon-large {
+    position: relative;
+}
+.headList .right .fly-item {
+    top: 0;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-dark-color);
+    border-radius: var(--percent50);
+}
+.mega .flexcol {
+    flex: 1;
+    min-width: 188px;
+    padding-right:2.5em;
+    margin-bottom:1.5em;
+    z-index: 1;
+}
+.header-main{
+    background-color: var(--secondary-dark-color);
+    padding: 1.5em 0;
+    margin-bottom:2em;
+}
+.dpt-cat {
+    position: relative;
+    z-index: 10;
+}
+.dpt-cat .dpt-head {
+    position: relative;
+    width: 300px;
+    padding: 0.75em 1.5em;
+    background-color: var(--primary-color);
+    border-radius: 7px 7px 0 0;
+    color: var(--white-color);
+    margin-bottom: -2.15em;
+}
+.dpt-cat .dpt-head .mini-text {
+    color: var(--light-bg-color);
+}
+.dpt-cat .dpt-trigger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1.3em;
+    height:60px;
+    width: 60px;
+}
+.dpt-menu > ul > li > a {
+    font-size: var(--font-small);
+    height: 46px;
+    align-items: center;
+}
+.dpt-menu .has-child:hover ul {
+    display:block;
+}
+.dpt-menu .has-child li a:hover {
+    text-decoration: underline;
+}
