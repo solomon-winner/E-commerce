@@ -37,14 +37,14 @@ const Departments = () => {
                         <div class="icon-small">{/*<i class="ri-arrow-right-s-lne"></i>*/}</div>
                         </a>
 
-                        {/* <ul>
+                        <ul>
                             <li><a href="#">Mobile</a></li>
                             <li><a href="#">Lap top</a></li>
                             <li><a href="#">Desk top computer</a></li>
                             <li><a href="#">Cables</a></li>
                             <li><a href="#">Security Camera</a></li>
                            
-                        </ul> */}
+                        </ul>
 
                     </li>
 
@@ -54,7 +54,7 @@ const Departments = () => {
                     <div class="icon-small">{/*<i class="ri-arrow-right-s-lne"></i>*/}</div>
                     </a>
 
-                    {/* <ul>
+                    <ul>
                         <li><a href="#">Makeup</a></li>
                         <li><a href="#">Skin Care</a></li>
                         <li><a href="#">Hair Care</a></li>
@@ -63,7 +63,7 @@ const Departments = () => {
                         <li><a href="#">Tools & Accessories</a></li>
                         <li><a href="#">Shave & Hair Removal</a></li>
                         <li><a href="#">Personal Care</a></li>
-                    </ul> */}
+                    </ul>
 
                 </li>
 
