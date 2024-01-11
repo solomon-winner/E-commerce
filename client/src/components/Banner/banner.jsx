@@ -10,9 +10,9 @@ const Banner = ({images, Message}) => {
 
   return () => clearInterval(intervalId);
  },[images, 30000]);
- const goToSlide = (index) => {
-  setCurrentSlide(index);
- }
+//  const goToSlide = (index) => {
+//   setCurrentSlide(index);
+//  }
 return (
         
     <div className = "banner">
@@ -26,7 +26,8 @@ return (
                             {images.map((image, index) =>(
                                              <div className= {`slideImg ${index === currentSlide ? 'active' : ''}`}
                                                    key = {index}
-                                                       onClick = {() => goToSlide(index)}>
+                                                    //    onClick = {() => goToSlide(index)}
+                                                    >
                                                             <img src= {image} alt= {`Slide ${index + 1}}`} />
                                                                  </div>
                                                               ))}
