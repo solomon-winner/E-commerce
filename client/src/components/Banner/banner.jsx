@@ -33,7 +33,14 @@ return (
                     <div className = "slide">
                         <div className = "item">
                         <div className ="image object-cover">
-                                            <img src= "./Items/item4.jpg" alt=""/>
+                            {images.map((image, index) =>(
+                                             <div className= {`object-cover ${index === currentSlide ? 'active' : ''}`}
+                                                   key = {index}
+                                                       onClick = {() => goToSlide(index)}>
+                                                            <img src= {image} alt= {`Slide ${index + 1}}`} />
+                                                                 </div>
+                                                              ))}
+                                            {/* <img src= "./Items/item4.jpg" alt=""/> */}
                                         </div>
                             <div className = "text-content flexcol">
                                 <h4>Shoes Fashion</h4>
@@ -61,13 +68,7 @@ export default Banner;
                             <div class="wrapper">
                                 <div class="slide">
                                     <div class="item">
-                                        {images.map((image, index) =>(
-                                             <div className= {`slide ${index === currentSlide ? 'active' : ''}`}
-                                                   key = {index}
-                                                       onClick = {() => goToSlide(index)}>
-                                                            <img src= {image} alt= {`Slide ${index + 1}}`} />
-                                                                 </div>
-                                                              ))}
+                                        
                                         <div class="text-content flexcol">
                                             <h4>Shoes Fashion</h4>
                                             <h2><span>Come And Get it!</span><br> <span>Brand New Shoes!</span></h2>
