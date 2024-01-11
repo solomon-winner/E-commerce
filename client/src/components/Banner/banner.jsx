@@ -1,5 +1,4 @@
 import "./banner.css"
-import Image4 from "../../assets/img/banner4.jpg"
 import {useState, useEffect} from "react";
 const Banner = ({images, interval}) => {
  const [currentSlide, setCurrentSlide] = useState(0);
