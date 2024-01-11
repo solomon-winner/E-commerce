@@ -1,4 +1,5 @@
 import "./banner.css"
+import Image4 from "../../assets/img/banner4.jpg"
 import {useState, useEffect} from "react";
 const Banner = ({images, interval}) => {
  const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,13 +32,9 @@ return (
                 <div className = "wrapper">
                     <div className = "slide">
                         <div className = "item">
-                            {images.map((image, index) =>(
-                                 <div className = {`slide ${index === currentSlide ? 'active' : ''}`}
-                                       key = {index}
-                                           onClick = {() => goToSlide(index)}>
-                                                <img src= {image} alt= {`Slide ${index + 1}}`} />
-                                                     </div>
-                                                  ))}
+                        <div className ="image object-cover">
+                                            <img src= "./Items/item4.jpg" alt=""/>
+                                        </div>
                             <div className = "text-content flexcol">
                                 <h4>Shoes Fashion</h4>
                                 <h2><span>Come And Get it!</span><br/> <span>Brand New Shoes!</span></h2>
@@ -84,3 +81,15 @@ export default Banner;
                 </div>
             </div>
  */
+/*
+
+
+
+ {images.map((image, index) =>(
+                                 <div className = {`slide ${index === currentSlide ? 'active' : ''}`}
+                                       key = {index}
+                                           onClick = {() => goToSlide(index)}>
+                                                <img src= {image} alt= {`Slide ${index + 1}}`} />
+                                                     </div>
+                                                  ))}
+*/

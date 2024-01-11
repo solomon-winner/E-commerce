@@ -17,13 +17,13 @@ Image by <a href="https://www.freepik.com/free-photo/smiley-man-holding-shopping
     margin: auto;
     overflow: hidden;
     
-}
-.slide {
+}*/
+/* .slide {
     display: none;
     width: 100%;
-}
-.active {
-    display: block;
+} */
+/*.active {
+     display: block;
 }
 .active img {
     object-fit: cover;
