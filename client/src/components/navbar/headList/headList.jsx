@@ -17,7 +17,7 @@ const HeadList = () => {
                             <li><a href = "#">Home</a></li>
                             <li><a href = "#">shope</a></li>
                             <li className  = "has-child">
-                                <a href = "#">Women
+                            <a href = "#">Women
                             <div className ="icon-small"><i className ="ri-arrow-down-s-line"></i></div>
 
                             </a>
