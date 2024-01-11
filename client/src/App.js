@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
      <Nav/>
-     <Banner images = {images} interval = {30000}/>
+     <Banner images = {images} Message = "Solomon Yalew"/>
     </div>
   );
 }

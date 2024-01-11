@@ -1,15 +1,15 @@
 import "./banner.css"
 import {useState, useEffect} from "react";
-const Banner = ({images, interval}) => {
+const Banner = ({images, Message}) => {
  const [currentSlide, setCurrentSlide] = useState(0);
 
  useEffect(() => {
   const intervalId = setInterval(() => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
-  }, interval);
+  }, 30000);
 
   return () => clearInterval(intervalId);
- },[images, interval]);
+ },[images, 30000]);
  const goToSlide = (index) => {
   setCurrentSlide(index);
  }
@@ -32,7 +32,7 @@ return (
                                                               ))}
                                         </div>
                             <div className = "text-content flexcol">
-                                <h4>Shoes Fashion</h4>
+                                <h4>{Message}</h4>
                                 <h2><span>Come And Get it!</span><br/> <span>Brand New Shoes!</span></h2>
                                 <a href="" className = "primary-button">Shop Now!</a>
                             </div>
