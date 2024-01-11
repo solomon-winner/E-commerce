@@ -11,12 +11,13 @@ const Departments = () => {
                                <img src= {Bars} alt="" />
                             </a>
                         </div>
+
                     <div class="dpt-menu">
                         <ul class="second-links">
                             <li class = "has-child beauty">
                                 <a href="#"><div class="icon-large"><i class="ri-bear-smile-line"></i></div>
                                 Beauty
-                            <div class="icon-small"><i class="ri-arrow-right-s-lne"></i></div>
+                            <div class="icon-small">{/*<i class="ri-arrow-right-s-lne"></i>*/}</div>
                             </a>
                             <ul>
                                 <li><a href="#">Makeup</a></li>
@@ -31,9 +32,9 @@ const Departments = () => {
                         </li>
 
                         <li class = "has-child electronics">
-                            <a href="#"><div class="icon-large"><i class="ri-bear-smile-line"></i></div>
+                            <a href="#"><div class="icon-large">{/*<i class="ri-bear-smile-line"></i>*/}</div>
                             Electronics
-                        <div class="icon-small"><i class="ri-arrow-right-s-lne"></i></div>
+                        <div class="icon-small">{/*<i class="ri-arrow-right-s-lne"></i>*/}</div>
                         </a>
 
                         <ul>
@@ -48,9 +49,9 @@ const Departments = () => {
                     </li>
 
                     <li class="has-child fashion">
-                        <a href="#"><div class="icon-large"><i class="ri-bear-smile-line"></i></div>
+                        <a href="#"><div class="icon-large">{/*<i class="ri-bear-smile-line"></i>*/}</div>
                         Women's Fashion
-                    <div class="icon-small"><i class="ri-arrow-right-s-lne"></i></div>
+                    <div class="icon-small">{/*<i class="ri-arrow-right-s-lne"></i>*/}</div>
                     </a>
 
                     <ul>
@@ -67,52 +68,52 @@ const Departments = () => {
                 </li>
 
                 <li>
-                    <a href="#"><div class="icon-large"><i class="ri-shirt-line"></i></div>
+                    <a href="#"><div class="icon-large">{/*<i class="ri-shirt-line"></i>*/}</div>
                     Men's Fashion
                 </a>
                 </li>
                 <li>
-                    <a href="#"><div class="icon-large"><i class="ri-user-5-line"></i></div>
+                    <a href="#"><div class="icon-large">{/*<i class="ri-user-5-line"></i>*/}</div>
                     Girl's Fashion
                 </a>
                 </li>
                 <li>
-                    <a href="#"><div class="icon-large"><i class="ri-user-6-line"></i></div>
+                    <a href="#"><div class="icon-large">{/*<i class="ri-user-6-line"></i>*/}</div>
                     Boy's Fashion
                 </a>
                 </li>
                 <li>
-                    <a href="#"><div class="icon-large"><i class="ri-heart-pulse-line"></i></div>
+                    <a href="#"><div class="icon-large">{/*<i class="ri-heart-pulse-line"></i>*/}</div>
                     Health & Household
                 </a>
             </li>
             <li class = "has-child home-kit">
-                <a href="#"><div class="icon-large"><i class="ri-home-8-line"></i></div>
+                <a href="#"><div class="icon-large">{/*<i class="ri-home-8-line"></i>*/}</div>
                 Home & Kitchen
-            <div class="icon-small"><i class="ri-arrow-right-s-lne"></i></div>
+            <div class="icon-small">{/*<i class="ri-arrow-right-s-lne"></i>*/}</div>
             </a>
 
             
 
         </li>
             <li class="">
-                <a href="#"><div class="icon-large"><i class="ri-andoid-line"></i></div>
+                <a href="#"><div class="icon-large">{/*<i class="ri-andoid-line"></i>*/}</div>
                 Pet Supplies
-            <div class="icon-small"><i class="ri-arrow-right-s-lne"></i></div>
+            <div class="icon-small">{/*<i class="ri-arrow-right-s-lne"></i>*/}</div>
             </a>
         </li>
 
         <li>
-            <a href="#"><div class="icon-large"><i class="ri-basketball-line"></i></div>
+            <a href="#"><div class="icon-large">{/*<i class="ri-basketball-line"></i>*/}</div>
             Sports
-        <div class="icon-small"><i class="ri-arrow-right-s-lne"></i></div>
+        <div class="icon-small">{/*<i class="ri-arrow-right-s-lne"></i>*/}</div>
         </a>
     </li>
 
     <li>
-        <a href="#"><div class="icon-large"><i class="ri-shield-star-line"></i></div>
+        <a href="#"><div class="icon-large">{/*<i class="ri-shield-star-line"></i>*/}</div>
         Best Seller
-    <div class="icon-small"><i class="ri-arrow-right-s-lne"></i></div>
+    <div class="icon-small">{/*<i class="ri-arrow-right-s-lne"></i>*/}</div>
     </a>
 </li>
                         </ul>

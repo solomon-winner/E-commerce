@@ -23,9 +23,12 @@
     width: 60px;
 }
 .dpt-menu > ul > li > a {
+    display: flex;
     font-size: var(--font-small);
     height: 46px;
     align-items: center;
+    border-bottom: 1px solid var(--border-color);
+
 }
 .dpt-menu .has-child:hover ul {
     display:block;
