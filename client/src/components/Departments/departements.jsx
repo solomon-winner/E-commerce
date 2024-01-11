@@ -1,5 +1,5 @@
 import "./departements.css"
-import Bars from "../../assets/icons/bars-solid.svg"
+import Bars from "../../assets/icons/bars.svg"
 const Departments = () => {
     return (
         <div className="left departements">
@@ -8,7 +8,7 @@ const Departments = () => {
                             <div class="main-text">All Depatements</div>
                             <div class="mini-text mobile-hide">Total 1059 Products</div>
                             <a href="" class="dpt-trigger mobile-hide">
-                                <Bars/>
+                               <img src= {Bars} alt="" />
                             </a>
                         </div>
                     <div class="dpt-menu">
