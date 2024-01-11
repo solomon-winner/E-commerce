@@ -241,7 +241,7 @@ body {
     .dpt-menu .home-kit .mega{
         background-image: url(./assets/img/banner4.jpg);
     }
-    .dpt-menu .has-child > :where(ul, .mega)::before {
+    /* .dpt-menu .has-child > :where(ul, .mega)::before {
         content: '';
         position: absolute;
         top: 0;
@@ -249,7 +249,7 @@ body {
         right: 0;
         bottom: 0;
         background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255,0,0));
-    }
+    } */
     .dpt-menu .mega {
         width: auto;
         min-width: var(--percent100);
