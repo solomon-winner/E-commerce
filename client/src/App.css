@@ -254,6 +254,9 @@ body {
         width: auto;
         min-width: var(--percent100);
     }
+    .dpt-menu .has-child>li{
+        cursor: pointer;
+    }
     .dpt-menu .has-child:hover .mega {
         display: flex;
     }
