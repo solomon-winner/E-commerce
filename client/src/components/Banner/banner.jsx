@@ -6,10 +6,10 @@ const Banner = ({images, Message}) => {
  useEffect(() => {
   const intervalId = setInterval(() => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
-  }, 1000);
+  }, 10000);
 
   return () => clearInterval(intervalId);
- },[images, 1000]);
+ },[images, 10000]);
 
 return (
         
