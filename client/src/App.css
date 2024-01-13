@@ -260,4 +260,8 @@ body {
     .dpt-menu .has-child:hover .mega {
         display: flex;
     }
+    .banner > div > .wrapper {
+        width: calc(100% - (300px + 2em));
+        margin-left: auto;
+    }
 } 
