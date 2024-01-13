@@ -43,7 +43,7 @@ const Sponsers = () => {
 
                 <div className ="item">
                     <a href="#">
-                        <img src="./assets/img/brands/dng.png" alt=""/>
+                        <img src = {Zara} alt=""/>
                     </a>
                 </div>
             </div>
