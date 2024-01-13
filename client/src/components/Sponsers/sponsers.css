@@ -1,7 +1,9 @@
-.sponsers img{
-    height: 5%;
-    width: 5%;
+.sponsers .wrapper{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em 0;
 }
+
 .sponsers {
     display: flex;
     align-items: center;
