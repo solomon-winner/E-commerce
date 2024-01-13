@@ -26,7 +26,13 @@
     height: 474px;
 }
 .banner .item::before{
-    
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    background-color: var(--white-color);
 }
 .banner .text-content {
     position: relative;
