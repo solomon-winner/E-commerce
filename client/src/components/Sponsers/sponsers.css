@@ -1,0 +1,10 @@
+.sponsers img{
+    height: 5%;
+    width: 5%;
+}
+.sponsers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+

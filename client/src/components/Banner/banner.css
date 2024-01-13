@@ -25,6 +25,9 @@
     position: relative;
     height: 474px;
 }
+.banner .item::before{
+    
+}
 .banner .text-content {
     position: relative;
     height: var(--percent100);
