@@ -62,3 +62,20 @@ sectop h2 span:not(.circle) {
     top: 0;
     right: 0;
 }
+products .hoverable li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    padding: 0.25em;
+    margin: 0.25em;
+    border-radius: var(--percent50);
+    line-height: 1;
+    background-color: var(--white-color);
+    opacity: .5;
+    transition: var(--trans-background-color), opacity .3s;
+}
+.products .item:hover .hoverable li a{
+opacity: 1;
+}
