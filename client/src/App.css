@@ -97,6 +97,15 @@ body {
 /* .mobile-hide {
     display: none;
 } */
+
+@media screen and (min-width: 760px) {
+    .products .price .current {
+        font-size: 1.25em;
+    }
+    .products.mini {
+        flex: 0 0 50%;
+    }
+}
 @media screen and (min-width: 992px) {
     .container{
         padding: 0.2em;
