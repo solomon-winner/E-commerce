@@ -75,7 +75,7 @@ const Trending = () => {
                                         <div className = "media">
                                             <div className = "thumbnail">
                                                 <a href="#">
-                                                    <img src="assets/img/products/apparel2.jpg" alt=""/>
+                                                    <img src = {Apparel2} alt=""/>
                                                 </a>
                                             </div>
 
@@ -114,7 +114,7 @@ const Trending = () => {
                                         <div className = "media">
                                             <div className = "thumbnail">
                                                 <a href="#">
-                                                    <img src="assets/img/products/apparel1.jpg" alt=""/>
+                                                    <img src= {Apparel3} alt=""/>
                                                 </a>
                                             </div>
 
