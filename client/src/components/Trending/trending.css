@@ -1,5 +1,6 @@
 .trending .flexwrap {
     display: flex;
+    flex-wrap: wrap;
 }
 .sectop{
     justify-content: space-between;

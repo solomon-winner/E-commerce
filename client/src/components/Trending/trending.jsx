@@ -7,7 +7,7 @@ import Apparel5 from "../../assets/img/products/apparel5.jpg"
 import Electronic2 from "../../assets/img/products/electronic2.jpg"
 import Electronic3 from "../../assets/img/products/electronic3.jpg"
 import Shoes1 from "../../assets/img/products/shoe1.jpg"
-import Shoes1 from "../../assets/img/products/shoe2.jpg"
+import Shoes2 from "../../assets/img/products/shoe2.jpg"
 
 
 const Trending = () => {
