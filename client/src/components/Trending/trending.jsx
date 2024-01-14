@@ -1,4 +1,10 @@
 import "./trending.css"
+import Apparel1 from "../../assets/img/products/apparel1.jpg"
+import Apparel2 from "../../assets/img/products/apparel2.jpg"
+import Apparel3 from "../../assets/img/products/apparel3.jpg"
+import Apparel4 from "../../assets/img/products/apparel4.jpg"
+import Apparel5 from "../../assets/img/products/apparel5.jpg"
+
 
 const Trending = () => {
     return (
@@ -15,9 +21,9 @@ const Trending = () => {
                                         <div className = "offer">
                                             <p>Offer ends at</p>
                                             <ul className = "flexcenter">
-                                                <li>1</li>
-                                                <li>15</li>
-                                                <li>27</li>
+                                                <li>1</li>:
+                                                <li>15</li>:
+                                                <li>27</li>:
                                                 <li>60</li>
 
                                             </ul>
@@ -25,7 +31,7 @@ const Trending = () => {
                                         <div className = "media">
                                             <div className = "image">
                                                 <a href="#">
-                                                    <img src="assets/img/products/apparel5.jpg" alt=""/>
+                                                    <img src = {Apparel5} alt=""/>
                                                 </a>
                                             </div>
 
