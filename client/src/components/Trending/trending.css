@@ -9,3 +9,14 @@
     font-size: 1.5em;
     font-weight: var(--fw7);
 }
+sectop h2 span:not(.circle) {
+    padding: 0 0 0 2em;
+}
+.sectop h2 .circle {
+    top: -5px;
+}
+
+.products .offer {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
