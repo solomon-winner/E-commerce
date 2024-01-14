@@ -1,7 +1,4 @@
-.trending .flexwrap {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .sectop{
     justify-content: space-between;
     padding-bottom: 0.5em;
@@ -216,7 +213,7 @@ overflow: hidden;
     color: var(--primary-color);
 }
 .flexwrap .row {
-    flex: 0 0 100%;
+    flex: 30 30 30%;
     width: 100%;
     margin-bottom: 2em;
 }
