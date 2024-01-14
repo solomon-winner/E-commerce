@@ -95,3 +95,19 @@ opacity: 1;
     transform: translateX(0);
     opacity:1;
 }
+.products .hoverable li:last-child {
+    transition-delay: .1s;
+}
+.products .discount {
+    top: auto;
+    right: 0;
+    left: auto;
+    bottom:0;
+    background-color: transparent;
+    z-index: 1;
+    position: absolute;
+
+}
+.products .discount::before {
+    background-color: var(--dark-color);
+}
