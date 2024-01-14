@@ -1,3 +1,6 @@
+.trending .flexwrap {
+    display: flex;
+}
 .sectop{
     justify-content: space-between;
     padding-bottom: 0.5em;
@@ -9,7 +12,7 @@
     font-size: 1.5em;
     font-weight: var(--fw7);
 }
-sectop h2 span:not(.circle) {
+.sectop h2 span:not(.circle) {
     padding: 0 0 0 2em;
 }
 .sectop h2 .circle {
@@ -43,6 +46,9 @@ sectop h2 span:not(.circle) {
     right: -0.6em;
     color: var(--light-text-color);
 }
+
+
+
 .products.big .item {
     flex-direction: column;
     padding: 2.5em;
@@ -50,6 +56,24 @@ sectop h2 span:not(.circle) {
     border-radius: 7px;
     max-width: 460px;
     margin: 0 auto;
+}
+.products.mini .item {
+    margin-bottom: 2em;
+    
+}
+
+.products.mini .media {
+    width: 130px;
+    height: 160px;
+    margin-right: 1.25em
+}
+
+.products:where(.mini, .main) h3 {
+    font-weight: 400;
+}
+.products.mini .content {
+    margin: 0;
+    gap: 0.75em;
 }
 .products :where(.image, .thumbnail) img {
     transition: transform .3s;
@@ -62,7 +86,7 @@ sectop h2 span:not(.circle) {
     top: 0;
     right: 0;
 }
-products .hoverable li a {
+.products .hoverable li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,6 +147,7 @@ opacity: 1;
     align-items: center;
     justify-content: center;
     border-radius: var(--percent50);
+    
 }
 .products .content {
     display: flex;
@@ -132,74 +157,65 @@ opacity: 1;
     gap: 1em;
     margin-top: 1.25em;
 }
-
-.products .stock .bar {
-    height: 3px;
-    margin-top: 1em;
-    background-color: var(--border-color);
+.products .rating {
+    display: flex;
+    gap: 1em;
+}
+.products .rating .stars{
+     width: 80px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    background-image: url(../../assets/icons/star-solid.svg);
+    background-position-y: top;
+    background-repeat-y: no-repeat;
+} /**/
+.products h3 {
+    font-family: 'Rubik';
+    font-size: 1em;
     overflow: hidden;
-    }
-    .products .stock .available  {
-        height: 3px;
-        width: 21%;
-        background-color: var(--secondary-dark-color);
-    }
-    .products .item {
-        display: flex;
-        position: relative;
-    }
-    .products .stock-danger{
-        color: var(--primary-color);
-    }
-    .flexwrap .row {
-        flex: 0 0 100%;
-        width: 100%;
-        margin-bottom: 2em;
-    }
-    .products h3 {
-        font-family: 'Rubik';
-        font-size: 1em;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        -webkit-line-clamp: 2;
-        display: -webkit-box;
-        -webkit-box-prient: vertical;
-    }
-    .products h3 a:hover {
-        text-decoration: underline;
-    }
-    .products .price .current {
-       font-size: calc(1em + 1vh);
-       color: var(--primary-color);
-       margin-right: 0.25em;
-    }
-    .products .price .normal {
-        color: var(--light-text-color);
-        text-decoration: line-through;
-    }
-    .products .stock .qty {
-        display: flex;
-        justify-content: space-between;
-    }
-    .products .content {
-        display: flex;
-        flex-direction: column;
-    }
-    .products:where(.big, .main.one) .content {
-        gap: 1em;
-        margin-top: 1.25em;
-    }
-    .products .rating {
-        display: flex;
-        gap: 1em;
-    }
-    .products .rating .stars{
-         width: 80px;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        gap: 0.5em;
-        background-image: url(../../assets/icons/star-solid.svg);
-        background-position-y: top;
-        background-repeat-y: no-repeat;
-    }
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-prient: vertical;
+}
+.products h3 a:hover {
+    text-decoration: underline;
+}
+.products .price .current {
+   font-size: calc(1em + 1vh);
+   color: var(--primary-color);
+   margin-right: 0.25em;
+}
+.products .price .normal {
+    color: var(--light-text-color);
+    text-decoration: line-through;
+}
+.products .stock .qty {
+    display: flex;
+    justify-content: space-between;
+}
+.products .stock .bar {
+height: 3px;
+margin-top: 1em;
+background-color: var(--border-color);
+overflow: hidden;
+}
+.products .stock .available  {
+    height: 3px;
+    width: 21%;
+    background-color: var(--secondary-dark-color);
+}
+.products .item {
+    display: flex;
+    position: relative;
+}
+.products .stock-danger{
+    color: var(--primary-color);
+}
+.flexwrap .row {
+    flex: 0 0 100%;
+    width: 100%;
+    margin-bottom: 2em;
+}
