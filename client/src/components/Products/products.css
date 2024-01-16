@@ -165,3 +165,20 @@ opacity: 1;
    background-position-y: top;
    background-repeat-y: no-repeat;
 } 
+.products h3 {
+    font-family: 'Rubik';
+    font-size: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-prient: vertical;
+}
+.products h3 a:hover {
+    text-decoration: underline;
+}
+.products .price .current {
+   font-size: calc(1em + 1vh);
+   color: var(--primary-color);
+   margin-right: 0.25em;
+}
