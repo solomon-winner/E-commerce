@@ -20,7 +20,7 @@ return (
                     <div className ="second-links"><a href="#" className ="view-all">View all <i className  = "ri-arrow-right-line"></i></a></div>
                 </div>
                 <div className ="products main flexwrap">
-                    <div className ="item">
+                    {/* <div className ="item">
                             
                         <div className ="media">
                             <div className ="thumbnail object-cover">
@@ -100,7 +100,7 @@ return (
                             </ul>
                            </div>
                         </div>
-                    </div>
+                    </div> */}
 
 
                     <div className ="item">

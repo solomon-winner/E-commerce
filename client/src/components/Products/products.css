@@ -10,20 +10,7 @@
     height: 200px;
     width: 300px;
 }
-.products.main .footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    padding: 0 1em 1em;
-    border-radius: 7px;
-    z-index: 1;
-    /* background: linear-gradient(0deg var(--light-bg-color) 0%, var(--white-color) 70%); */
-    background-color: #a9cbd3;
-    opacity: 0;
-    visibility: hidden;
-    will-change: opacity;
-    transition: all .2s ease-in-out;
-}
+
 .products.main .item:hover .footer {
     opacity: 1;
     visibility: visible;
