@@ -6,7 +6,9 @@ import Electronic5 from "../../assets/img/products/electronic5.jpg"
 import Electronic1 from "../../assets/img/products/electronic1.jpg"
 import Home3 from "../../assets/img/products/home3.jpg"
 import Electronic4 from "../../assets/img/products/electronic4.jpg"
+import Home5 from "../../assets/img/products/home5.jpg"
 import Home2 from "../../assets/img/products/home2.jpg"
+
 const products = () => {
 return (
     <div className ="features">
