@@ -1,6 +1,9 @@
 import "./Category.css"
+import Procat1 from "../../assets/img/banner/procat1.jpg"
+import Procat2 from "../../assets/img/banner/procat2.jpg"
+import Procat3 from "../../assets/img/banner/procat3.jpg"
 
-const Ctegory = () => {
+const Category = () => {
     return (
         <div className ="product-categories flexwrap">
         <div className ="row">
@@ -72,3 +75,4 @@ const Ctegory = () => {
     </div>
     )
 }
+export default Category;
