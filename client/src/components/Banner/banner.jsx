@@ -21,13 +21,13 @@ return (
                     <div className = "slide">
                         <div className = "item">
                         <div className ="image object-cover">
-                            {/* {images.map((image, index) =>(
+                            {images.map((image, index) =>(
                                              <div className= {`slideImg ${index === currentSlide ? 'active' : ''}`}
                                                    key = {index}>
 
                                                             <img src= {image} alt= {`Slide ${index + 1}}`}  />
                                                                  </div>
-                                                              ))} */}
+                                                              ))}
                                         </div>
                             <div className = "text-content flexcol">
                                 <h4>{Message}</h4>
