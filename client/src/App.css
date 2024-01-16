@@ -110,7 +110,7 @@ body {
         font-size: 1.25em;
     }
     .products.mini,
-    .banner .row ,
+    .brutal .row ,
     .widgets .row {
         flex: 0 0 50%;
     }
@@ -282,7 +282,7 @@ body {
     .dpt-menu .has-child:hover .mega {
         display: flex;
     }
-    .banner > div > .wrapper {
+    .brutal > div > .wrapper {
         width: calc(100% - (300px + 2em));
         margin-left: auto;
     }

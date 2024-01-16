@@ -8,6 +8,7 @@ import Image4 from "../../assets/img/banner4.jpg"
 import Sponsers from "../../components/Sponsers/sponsers";
 import Trending from "../../components/Trending/trending";
 import Products from "../../components/Products/products";
+import Brutals from "../../components/Brutals/Brutal";
 
 const Home = () => {
     const images = [Image1, Image2, Image3,Image4]
@@ -18,6 +19,7 @@ return (<div className="home">
  <Sponsers/>
  <Trending/>
  <Products/>
+ <Brutals/>
 </div>)
 }
 

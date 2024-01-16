@@ -1,4 +1,9 @@
 import "./Brutal.css"
+import Banner2 from "../../assets/img/banner/banner2.jpg"
+import Banner1 from "../../assets/img/banner/banner1.jpg"
+import Procat1 from "../../assets/img/banner/procat1.jpg"
+import Procat2 from "../../assets/img/banner/procat2.jpg"
+import Procat3 from "../../assets/img/banner/procat3.jpg"
 
 const Brutal = () => {
     return (
@@ -10,7 +15,7 @@ const Brutal = () => {
                                 <div className ="row">
                                     <div className ="item">
                                         <div className ="image">
-                                            <img src="../../assets/img/banner/banner1.jpg" alt=""/>
+                                            <img src= {Banner1} alt=""/>
                                         </div>
                                         <div className ="text-content flexcol">
                                             <h4>Brutal sale!</h4>
@@ -25,7 +30,7 @@ const Brutal = () => {
                                 <div className ="row">
                                     <div className ="item get-gray">
                                         <div className ="image">
-                                            <img src="../../assets/img/banner/banner2.jpg" alt=""/>
+                                            <img src= {Banner2} alt=""/>
                                         </div>
                                         <div className  = "text-content flexcol">
                                             <h4>Brutal sale!</h4>
@@ -41,11 +46,11 @@ const Brutal = () => {
                             </div>
 
                              {/* product- categories  */}
-            <div className ="product-categories flexwrap">
+            {/* <div className ="product-categories flexwrap">
                 <div className ="row">
                     <div className ="item">
                         <div className ="image">
-                            <img src="../../assets/img/banner/procat1.jpg" alt=""/>
+                            <img src= {Procat1} alt=""/>
                         </div>
                         <div className ="content mini-links">
                             <h4>Beauty</h4>
@@ -67,7 +72,7 @@ const Brutal = () => {
                 <div className ="row">
                     <div className ="item">
                         <div className ="image">
-                            <img src="../../assets/img/banner/procat2.jpg" alt=""/>
+                            <img src={Procat2} alt=""/>
                         </div>
                         <div className ="content mini-links">
                             <h4>Beauty</h4>
@@ -89,7 +94,7 @@ const Brutal = () => {
                 <div className ="row">
                     <div className ="item">
                         <div className ="image">
-                            <img src="../../assets/img/banner/procat3.jpg" alt=""/>
+                            <img src= {Procat3} alt=""/>
                         </div>
                         <div className ="content mini-links">
                             <h4>Beauty</h4>
@@ -108,7 +113,7 @@ const Brutal = () => {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
                         </div>
                     </div>
                 </div>
