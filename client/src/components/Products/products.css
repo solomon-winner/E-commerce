@@ -182,3 +182,30 @@ opacity: 1;
    color: var(--primary-color);
    margin-right: 0.25em;
 }
+.products .price .normal {
+    color: var(--light-text-color);
+    text-decoration: line-through;
+}
+.products .stock .qty {
+    display: flex;
+    justify-content: space-between;
+}
+.products .stock .bar {
+height: 3px;
+margin-top: 1em;
+background-color: var(--border-color);
+overflow: hidden;
+}
+.products .stock .available  {
+    height: 3px;
+    width: 21%;
+    background-color: var(--secondary-dark-color);
+}
+.products .item {
+    display: flex;
+    position: relative;
+
+}
+.products .stock-danger{
+    color: var(--primary-color);
+}
