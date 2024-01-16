@@ -43,3 +43,32 @@
     right: -0.6em;
     color: var(--light-text-color);
 }
+.products.big .item {
+    flex-direction: column;
+    padding: 2.5em;
+    border: 2px solid var(--secondary-dark-color);
+    border-radius: 7px;
+    max-width: 460px;
+    margin: 0 auto;
+}
+.products.mini .item {
+    margin-bottom: 2em;
+    
+}
+
+.products.mini .media {
+    width: 130px;
+    height: 160px;
+    margin-right: 1.25em
+}
+
+.products:where(.mini, .main) h3 {
+    font-weight: 400;
+}
+.products.mini .content {
+    margin: 0;
+    gap: 0.75em;
+}
+.products :where(.image, .thumbnail) img {
+    transition: transform .3s;
+}
