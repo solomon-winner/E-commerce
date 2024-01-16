@@ -9,6 +9,7 @@ import Sponsers from "../../components/Sponsers/sponsers";
 import Trending from "../../components/Trending/trending";
 import Products from "../../components/Products/products";
 import Brutals from "../../components/Brutals/Brutal";
+import Footer from "../../components/footer/footer";
 
 const Home = () => {
     const images = [Image1, Image2, Image3,Image4]
@@ -20,6 +21,7 @@ return (<div className="home">
  <Trending/>
  <Products/>
  <Brutals/>
+ <Footer/>
 </div>)
 }
 

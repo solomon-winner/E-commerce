@@ -297,4 +297,9 @@ body {
     .products .big .media {
         max-height: 373px;
     }
+    .newsletter .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 } 
