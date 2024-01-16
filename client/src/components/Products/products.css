@@ -155,3 +155,13 @@ opacity: 1;
     display: flex;
     gap: 1em;
 }
+.products .rating .stars{
+    width: 80px;
+   height: 20px;
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+   background-image: url(./assets/icons/star-solid.svg);
+   background-position-y: top;
+   background-repeat-y: no-repeat;
+} 
