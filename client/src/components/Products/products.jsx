@@ -1,6 +1,6 @@
 import {List} from "../../DummyData";
-import "./Items.css"
-const Items = () => {
+import "./products.css"
+const products = () => {
      console.log(List)
 return (
     <div className ="features">
@@ -386,4 +386,4 @@ return (
 )
 }
 
-export default Items;
+export default products;
