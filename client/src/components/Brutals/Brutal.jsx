@@ -46,7 +46,7 @@ const Brutal = () => {
                             </div>
 
                              {/* product- categories  */}
-            {/* <div className ="product-categories flexwrap">
+            <div className ="product-categories flexwrap">
                 <div className ="row">
                     <div className ="item">
                         <div className ="image">
@@ -113,7 +113,7 @@ const Brutal = () => {
                     </div>
                 </div>
 
-            </div> */}
+            </div>
                         </div>
                     </div>
                 </div>
