@@ -20,7 +20,7 @@ return (
                     <div className ="second-links"><a href="#" className ="view-all">View all <i className  = "ri-arrow-right-line"></i></a></div>
                 </div>
                 <div className ="products main flexwrap">
-                    {/* <div className ="item">
+                    <div className ="item">
                             
                         <div className ="media">
                             <div className ="thumbnail object-cover">
@@ -92,15 +92,9 @@ return (
                                 <span className ="current">$129.90</span>
                                 <span className ="normal mini-text">$189.90</span>
                             </div>
-                           <div className ="footer">
-                            <ul className ="mini-text">
-                                <li>Polyster, Cotton</li>
-                                <li>Pull on Closure</li>
-                                <li>Fashion Personality</li>
-                            </ul>
-                           </div>
+                           
                         </div>
-                    </div> */}
+                    </div> 
 
 
                     <div className ="item">
