@@ -5,7 +5,6 @@ const Widgets = () => {
         <div className ="widgets">
                 <div className ="containers">
                     <div className ="wrapper">
-                        <div className ="flexwrap">
                             <div className ="row">
                                 <div className ="item mini-links">
                                     <h4>Help & Contact</h4>
@@ -69,7 +68,6 @@ const Widgets = () => {
                         </div>
                     </div>
                 </div>
-            </div>
     )
 }
 export default Widgets;

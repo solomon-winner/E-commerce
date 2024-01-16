@@ -110,8 +110,8 @@ body {
         font-size: 1.25em;
     }
     .products.mini,
-    .banner .row ,
-    .widgets .row {
+    .banner .row
+    {
         flex: 0 0 50%;
     }
     
@@ -290,9 +290,12 @@ body {
     .trending .products {
         flex: 0 0 33.3333%;
     }
-    .products.main .item, 
-.widgets .row {
+    .products.main .item
+    {
     flex: 0 0 25%;
+}
+.widgets .row  {
+    /* flex: 0 0 25%; */
 }
     .products .big .media {
         max-height: 373px;
