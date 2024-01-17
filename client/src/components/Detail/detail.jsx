@@ -137,7 +137,7 @@ const Detail = () => {
                                 <div className="wishlist" title = "Wishlist">
                                     <img src=  {Hplus} alt="" />
                                 </div>
-                                <div className="share" title = "Wishlist"></div>
+                                <div className="share" title = "share"></div>
                                 <button><img src= {CartPlus} alt="" /> Add to Cart</button>
                             </div>
                             

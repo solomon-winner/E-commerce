@@ -223,6 +223,9 @@ display: flex;
 flex-direction: column;
 gap: 1em;
 }
+.description h2 {
+    font-weight: bold;
+}
 .pro-color div:not(.sectop, .colors) {
     width: 40px;
     height: 40px;
@@ -266,13 +269,17 @@ gap: 1em;
     height: 10%;
 
 }
-.pro-size ul>li:hover, .pro-shope .wishlist:hover {
-    background-color: var(--dark-color);
+.pro-size ul>li:hover, .pro-shope .wishlist:hover, .pro-shope .share:hover{
+    background-color: rgb(145, 137, 137);
     color: white;
 }
-.pro-shope .wishlist {
-    width: 10%;
-    height: 10%;
+.pro-shope .wishlist, .pro-shope .share {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 .usr-cmt {
     display: flex;
