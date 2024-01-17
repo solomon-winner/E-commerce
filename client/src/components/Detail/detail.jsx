@@ -12,6 +12,7 @@ import Arrow from "../../assets/icons/arrow-right-long-solid.svg";
 import CartPlus from "../../assets/icons/cart-plus-solid.svg"
 import Hplus from "../../assets/icons/heart-solid.svg"
 import Hminus from "../../assets/icons/heart-circle-minus-solid.svg"
+
 import { useState } from "react"
 
 const Detail = () => {
@@ -149,6 +150,7 @@ const Detail = () => {
             </div>
         </div>
     </div>
+    <Products/>
     </div>
     )
 }
