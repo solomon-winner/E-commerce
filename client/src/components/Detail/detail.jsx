@@ -128,7 +128,9 @@ const Detail = () => {
                                 <a href="#">more Comments <img src={Arrow} alt="" /></a>                            
                                  </div>
                             </div>
-                            <div className="pro-shope">e</div>
+                            <div className="pro-shope">
+                                <button>Shop Now</button>
+                            </div>
                             
                         
 

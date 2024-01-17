@@ -275,6 +275,7 @@ gap: 3em;
 }
 .usr {
     display: flex;
+    align-items: center;
     gap: 0.5em;
     color: red;
 }
@@ -286,4 +287,9 @@ gap: 3em;
 }
 .usr-cmt a {
     align-self: flex-end;
+}
+.pro-shope button {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 2em 1em;
 }
