@@ -36,9 +36,7 @@
 .dpt-menu .has-child li a:hover {
     text-decoration: underline;
 }
-.dpt-menu {
-    display: none;
-}
+
 /* .dpt-menu .has-child > :where(ul, .mega)::before {
     content: '';
     position: absolute;
