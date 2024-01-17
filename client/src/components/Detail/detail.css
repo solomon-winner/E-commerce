@@ -217,3 +217,26 @@ overflow: hidden;
     width: 100%;
     margin-bottom: 2em;
 }
+.description {
+    gap: 1em;
+}
+.pro-color div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.pro-color div.red {
+    background-color: red;
+}
+.pro-color div.black {
+    background-color: black;
+}
+.pro-color div.green {
+    background-color: green;
+}
+.pro-color div.white {
+    background-color: white;
+}
+.pro-color ul>li {
+    display: flex;
+}

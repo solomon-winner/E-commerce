@@ -15,7 +15,7 @@ const Detail = () => {
         <div className ="container">
             <div className ="wrapper">
                 <div className ="sectop flexitem">
-                    <h2><span className ="circle"></span><span>Happy Sailed Womens Summer Boho Floral</span></h2>
+                    <h2><span>Addidas</span></h2>
                 </div>
                 <div className ="column">
                     <div className ="flexwrap">
@@ -72,11 +72,33 @@ const Detail = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className ="row products mini">
-
+                        <div className ="row description">
+                            <div className="pro-name">
+                            <div className ="sectop flexitem">
+                              <h2><span className ="circle"></span><span>Happy Sailed Womens Summer Boho Floral</span></h2>
+                             </div>
+                            </div>
+                            <div className="pro-description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Omnis nemo dolorem libero quisquam, commodi laboriosam dignissimos minus hic dicta!
+                                  Perferendis recusandae eveniet sunt. 
+                                  Aliquid reprehenderit vel totam, voluptate obcaecati dolor.
+                            </div>
+                            <div className="pro-color">
+                            <div className ="sectop flexitem">
+                              <h2><span className ="circle"></span><span>Available Colors</span></h2>
+                             </div>
+                                <ul>
+                                    <li>red: <div className="red"></div></li>
+                                    <li>green: <div className="green"></div></li>
+                                    <li>black: <div className="black"></div></li>
+                                    <li>white: <div className="white"></div></li>
+                                </ul>
+                            </div>
+                            <div className="pro-comment">d</div>
+                            <div className="pro-shope">e</div>
                             
-                        </div>
-                        <div className ="row products mini">
+                        
 
                           
                     </div>
