@@ -5,6 +5,7 @@ import Detail from "../../components/Detail/detail";
 const Profile = () => {
     return (
         <div className="profile">
+            <Navbar/>
             <Detail/>
         </div>
     )

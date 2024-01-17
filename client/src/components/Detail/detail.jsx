@@ -15,7 +15,7 @@ const Detail = () => {
         <div className ="container">
             <div className ="wrapper">
                 <div className ="sectop flexitem">
-                    <h2><span className ="circle"></span><span>Trending Products</span></h2>
+                    <h2><span className ="circle"></span><span>Happy Sailed Womens Summer Boho Floral</span></h2>
                 </div>
                 <div className ="column">
                     <div className ="flexwrap">

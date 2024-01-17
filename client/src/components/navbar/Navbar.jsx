@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         
 <div className="Nav">
-    <Header/>
+    {/* <Header/> */}
     <HeadList/>
     <HeaderMain/>
 </div>
