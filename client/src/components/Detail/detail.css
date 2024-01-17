@@ -5,15 +5,15 @@
     margin-bottom: 2em;
     border-bottom: 1px solid var(--border-color)
 }
-.sectop h2 {
+.sectop h3 {
     position: relative;
     font-size: 1.5em;
     font-weight: var(--fw7);
 }
-.sectop h2 span:not(.circle) {
+.sectop h3 span:not(.circle) {
     padding: 0 0 0 2em;
 }
-.sectop h2 .circle {
+.sectop h3 .circle {
     top: -5px;
 }
 
@@ -243,7 +243,6 @@ gap: 3em;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     gap:1em;
 }
 .pro-color .colors div {
@@ -258,8 +257,8 @@ gap: 3em;
     align-items: center;
     justify-content: center;
     color:rgb(18, 20, 15);
-    font-size: 1%;
-    font-weight: 100;
+    /* font-size: 1%;
+    font-weight: 100; */
     background-color: rgba(0, 0, 0, 0.226);
     padding: 1em;
     cursor: pointer;
@@ -267,4 +266,9 @@ gap: 3em;
     width: 10%;
     height: 10%;
 
+}
+.pro-stars {
+    background-image: url(../../assets/icons/star-solid.svg);
+    width: 64px;
+    background-color: black;
 }

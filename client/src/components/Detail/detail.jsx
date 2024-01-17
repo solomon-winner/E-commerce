@@ -72,11 +72,16 @@ const Detail = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className ="row description">
+                        <div className ="row products description">
                             <div className="pro-name">
                             <div className ="sectop flexitem">
                               <h2><span className ="circle"></span><span>Happy Sailed Womens Summer Boho Floral</span></h2>
                              </div>
+                             <div className ="rating">
+                                        <div className ="stars">
+                                        </div>
+                                        <span className ="mini-text">(2,518)</span>
+                                    </div>
                             </div>
                             <div className="pro-description">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -86,19 +91,19 @@ const Detail = () => {
                             </div>
                             <div className="pro-color">
                             <div className ="sectop flexitem">
-                              <h2><span className ="circle"></span><span>Available Colors</span></h2>
+                              <h3><span>Available Colors</span></h3>
                              </div>
                              <div className="colors">
-                                <span>red: </span> <div className="red"></div>
-                               <span>Green: </span> <div className="green"></div>
-                               <span>Black</span> <div className="black"></div>
-                               <span>White</span> <div className="white"></div>
+                                 <div className="red"></div>
+                                <div className="green"></div>
+                                <div className="black"></div>
+                               <div className="white"></div>
                              </div>
                                
                             </div>
                             <div className="pro-size">
                             <div className ="sectop flexitem">
-                              <h2><span className ="circle"></span><span>Available Sizes</span></h2>
+                              <h3><span>Available Sizes</span></h3>
                              </div>
                              <ul>
                                 <li>32</li>
@@ -107,7 +112,11 @@ const Detail = () => {
                                 <li>29</li>
                              </ul>
                             </div>
-                            <div className="pro-comment">d</div>
+                            <div className="pro-comment">
+                            <div className ="sectop flexitem">
+                              <h3><span>Comments About the product</span></h3>
+                             </div>
+                            </div>
                             <div className="pro-shope">e</div>
                             
                         
