@@ -1,12 +1,12 @@
-import "./Profile.css";
+import "./AboutProduct.css"
 import Navbar from "../../components/navbar/Navbar";
 import Detail from "../../components/Detail/detail";
 import Products from "../../components/Products/products";
 import Footer from "../../components/footer/footer";
 
-const Profile = () => {
-    return (
-        <div className="profile">
+const AboutProduct = () => {
+    return  (
+        <div className="aboutProduct">
             <Navbar/>
             <Detail/>
             <Products/>
@@ -14,4 +14,4 @@ const Profile = () => {
         </div>
     )
 }
-export default Profile;
+export default AboutProduct;
