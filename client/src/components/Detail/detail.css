@@ -218,9 +218,10 @@ overflow: hidden;
     margin-bottom: 2em;
 }
 .description {
-    gap: 1em;
+    justify-content: first baseline;
+    gap: 51em;
 }
-.pro-color div {
+.pro-color div:not(.sectop) {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -239,4 +240,6 @@ overflow: hidden;
 }
 .pro-color ul>li {
     display: flex;
+    gap:1em;
+    flex:2;
 }

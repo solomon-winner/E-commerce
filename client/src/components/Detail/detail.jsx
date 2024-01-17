@@ -88,16 +88,16 @@ const Detail = () => {
                             <div className ="sectop flexitem">
                               <h2><span className ="circle"></span><span>Available Colors</span></h2>
                              </div>
-                                <ul>
+                                {/* <ul>
                                     <li>red: <div className="red"></div></li>
                                     <li>green: <div className="green"></div></li>
                                     <li>black: <div className="black"></div></li>
                                     <li>white: <div className="white"></div></li>
                                 </ul>
-                            </div>
-                            <div className="pro-comment">d</div>
-                            <div className="pro-shope">e</div>
                             
+                            <div className="pro-comment">d</div>
+                            <div className="pro-shope">e</div> */}
+                            </div>
                         
 
                           
