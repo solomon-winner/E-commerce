@@ -257,8 +257,6 @@ gap: 3em;
     align-items: center;
     justify-content: center;
     color:rgb(18, 20, 15);
-    /* font-size: 1%;
-    font-weight: 100; */
     background-color: rgba(0, 0, 0, 0.226);
     padding: 1em;
     cursor: pointer;
@@ -267,8 +265,9 @@ gap: 3em;
     height: 10%;
 
 }
-.pro-stars {
-    background-image: url(../../assets/icons/star-solid.svg);
-    width: 64px;
-    background-color: black;
+.usr-cmt .cmt {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.usr-cmt a {
+    align-self: flex-end;
 }

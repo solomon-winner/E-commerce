@@ -8,7 +8,7 @@ import Electronic2 from "../../assets/img/products/electronic2.jpg"
 import Electronic3 from "../../assets/img/products/electronic3.jpg"
 import Shoes1 from "../../assets/img/products/shoe1.jpg"
 import Shoes2 from "../../assets/img/products/shoe2.jpg"
-
+import Arrow from "../../assets/icons/arrow-right-long-solid";
 const Detail = () => {
     return (
         <div className="detail">
@@ -124,7 +124,8 @@ const Detail = () => {
                                 <div className="cmt">
                                     "...Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem commodi quisquam fugit necessitatibus est nisi laborum labore. Esse veritatis saepe dolorem quidem ex soluta, voluptatum neque aliquam accusamus eligendi."
                                 </div>
-                             </div>
+                                <a href="#">more Comments <img src={Arrow} alt="" /></a>                            
+                                 </div>
                             </div>
                             <div className="pro-shope">e</div>
                             
