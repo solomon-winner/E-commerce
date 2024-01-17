@@ -20,10 +20,10 @@ const Departments = () => {
                             <a href="" className="dpt-trigger mobile-hide">
                             <img src= {Bars} alt="" style={{
                                 display: Clicked ? 'none' : 'block'
-                               }} />
+                               }} onClick={seeDpt}/>
                                <img src= {Cross} alt="" style={{
                                 display: Clicked ? 'block' : 'none'
-                               }} />
+                               }} onClick={seeDpt}/>
                             </a>
                         </div>
 
