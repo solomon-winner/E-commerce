@@ -218,10 +218,11 @@ overflow: hidden;
     margin-bottom: 2em;
 }
 .description {
-    justify-content: first baseline;
-    gap: 51em;
+display: flex;
+flex-direction: column;
+gap: 3em;
 }
-.pro-color div:not(.sectop) {
+.pro-color div:not(.sectop, .colors) {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -238,8 +239,32 @@ overflow: hidden;
 .pro-color div.white {
     background-color: white;
 }
-.pro-color ul>li {
+.pro-color .colors {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap:1em;
-    flex:2;
+}
+.pro-color .colors div {
+    cursor: pointer;
+}
+.pro-size ul {
+    display: flex;
+    gap: 3em;
+}
+.pro-size ul>li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(18, 20, 15);
+    font-size: 1%;
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.226);
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+
 }

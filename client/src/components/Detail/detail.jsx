@@ -88,16 +88,28 @@ const Detail = () => {
                             <div className ="sectop flexitem">
                               <h2><span className ="circle"></span><span>Available Colors</span></h2>
                              </div>
-                                {/* <ul>
-                                    <li>red: <div className="red"></div></li>
-                                    <li>green: <div className="green"></div></li>
-                                    <li>black: <div className="black"></div></li>
-                                    <li>white: <div className="white"></div></li>
-                                </ul>
-                            
-                            <div className="pro-comment">d</div>
-                            <div className="pro-shope">e</div> */}
+                             <div className="colors">
+                                <span>red: </span> <div className="red"></div>
+                               <span>Green: </span> <div className="green"></div>
+                               <span>Black</span> <div className="black"></div>
+                               <span>White</span> <div className="white"></div>
+                             </div>
+                               
                             </div>
+                            <div className="pro-size">
+                            <div className ="sectop flexitem">
+                              <h2><span className ="circle"></span><span>Available Sizes</span></h2>
+                             </div>
+                             <ul>
+                                <li>32</li>
+                                <li>31</li>
+                                <li>20</li>
+                                <li>29</li>
+                             </ul>
+                            </div>
+                            <div className="pro-comment">d</div>
+                            <div className="pro-shope">e</div>
+                            
                         
 
                           
