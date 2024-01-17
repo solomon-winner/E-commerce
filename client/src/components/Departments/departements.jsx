@@ -1,8 +1,11 @@
 import "./departements.css"
 import Bars from "../../assets/icons/bars.svg"
+import { useState } from "react"
+
 const Departments = () => {
+    const [Clicked, setClicked] =useState(false);
     const seeDpt = () => {
-        
+        setClicked(current = !current);
     }
 
     return (
@@ -16,7 +19,9 @@ const Departments = () => {
                             </a>
                         </div>
 
-                    <div class="dpt-menu">
+                    <div class="dpt-menu" style = {{
+                        display: Clicked ?  'block': 'none'
+                    }}>
                         <ul class="second-links">
                             <li class = "has-child beauty">
                                 <a href="#"><div class="icon-large"><i class="ri-bear-smile-line"></i></div>
