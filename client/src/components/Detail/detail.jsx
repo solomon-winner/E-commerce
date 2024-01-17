@@ -9,7 +9,9 @@ import Electronic3 from "../../assets/img/products/electronic3.jpg"
 import Shoes1 from "../../assets/img/products/shoe1.jpg"
 import Shoes2 from "../../assets/img/products/shoe2.jpg"
 import Arrow from "../../assets/icons/arrow-right-long-solid.svg";
+import CartPlus from "../../assets/icons/cart-plus-solid.svg"
 const Detail = () => {
+
     return (
         <div className="detail">
         <div className ="container">
@@ -48,7 +50,15 @@ const Detail = () => {
                                     </div>
                                     <div className ="discount center flexcenter"><span>31%</span></div>
                                 </div>
-                                <div className ="content">
+                                
+                            </div>
+                        </div>
+                        <div className ="row products description">
+                            <div className="pro-name">
+                            <div className ="sectop flexitem">
+                              <h2><span className ="circle"></span><span>Happy Sailed Womens Summer Boho Floral</span></h2>
+                             </div>
+                             <div className ="content">
                                     <div className ="rating">
                                         <div className ="stars">
                                         </div>
@@ -70,18 +80,6 @@ const Detail = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className ="row products description">
-                            <div className="pro-name">
-                            <div className ="sectop flexitem">
-                              <h2><span className ="circle"></span><span>Happy Sailed Womens Summer Boho Floral</span></h2>
-                             </div>
-                             <div className ="rating">
-                                        <div className ="stars">
-                                        </div>
-                                        <span className ="mini-text">(2,518)</span>
-                                    </div>
                             </div>
                             <div className="pro-description">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -129,7 +127,9 @@ const Detail = () => {
                                  </div>
                             </div>
                             <div className="pro-shope">
-                                <button>Shop Now</button>
+                                <div className="wishlist"></div>
+                                <div className="share"></div>
+                                <button><img src= {CartPlus} alt="" /> Add to Cart</button>
                             </div>
                             
                         

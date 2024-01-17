@@ -220,7 +220,7 @@ overflow: hidden;
 .description {
 display: flex;
 flex-direction: column;
-gap: 3em;
+gap: 2em;
 }
 .pro-color div:not(.sectop, .colors) {
     width: 40px;
@@ -228,16 +228,16 @@ gap: 3em;
     border-radius: 50%;
 }
 .pro-color div.red {
-    background-color: red;
+    background-color: rgb(228, 140, 140);
 }
 .pro-color div.black {
-    background-color: black;
+    background-color: rgb(46, 40, 40);
 }
 .pro-color div.green {
-    background-color: green;
+    background-color: rgb(21, 31, 21);
 }
 .pro-color div.white {
-    background-color: white;
+    background-color: rgb(110, 107, 107);
 }
 .pro-color .colors {
     display: flex;
@@ -287,9 +287,15 @@ gap: 3em;
 }
 .usr-cmt a {
     align-self: flex-end;
+}.pro-shope {
+    display: flex;
+    gap: 1em;
 }
 .pro-shope button {
     color: white;
+    width: 45%;
     background-color: var(--primary-color);
-    padding: 2em 1em;
+    padding: 1em 1em;
+    border-color: none;
+    border-radius: 10px;
 }
