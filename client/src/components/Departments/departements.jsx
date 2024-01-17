@@ -1,5 +1,6 @@
 import "./departements.css"
 import Bars from "../../assets/icons/bars.svg"
+import Cross from "../../assets/icons/xmark-solid.svg"
 import { useState } from "react"
 
 const Departments = () => {
@@ -17,7 +18,12 @@ const Departments = () => {
                             <div className="main-text">All Depatements</div>
                             <div className="mini-text mobile-hide">Total 1059 Products</div>
                             <a href="" className="dpt-trigger mobile-hide">
-                               <img src= {Bars} alt="" onClick={seeDpt}/>
+                            <img src= {Bars} alt="" style={{
+                                display: Clicked ? 'none' : 'block'
+                               }} />
+                               <img src= {Cross} alt="" style={{
+                                display: Clicked ? 'block' : 'none'
+                               }} />
                             </a>
                         </div>
 
