@@ -150,7 +150,6 @@ const Detail = () => {
             </div>
         </div>
     </div>
-    <Products/>
     </div>
     )
 }
