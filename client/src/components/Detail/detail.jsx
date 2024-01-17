@@ -116,6 +116,15 @@ const Detail = () => {
                             <div className ="sectop flexitem">
                               <h3><span>Comments About the product</span></h3>
                              </div>
+                             <div className="user-cmt">
+                                <div className="usr">
+                                   <span>Solomon Yalew</span> 
+                                </div>
+                                <div className="stars"></div>
+                                <div className="cmt">
+                                    "...Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem commodi quisquam fugit necessitatibus est nisi laborum labore. Esse veritatis saepe dolorem quidem ex soluta, voluptatum neque aliquam accusamus eligendi."
+                                </div>
+                             </div>
                             </div>
                             <div className="pro-shope">e</div>
                             
