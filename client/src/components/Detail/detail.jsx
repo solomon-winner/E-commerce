@@ -10,8 +10,16 @@ import Shoes1 from "../../assets/img/products/shoe1.jpg"
 import Shoes2 from "../../assets/img/products/shoe2.jpg"
 import Arrow from "../../assets/icons/arrow-right-long-solid.svg";
 import CartPlus from "../../assets/icons/cart-plus-solid.svg"
-const Detail = () => {
+import Hplus from "../../assets/icons/heart-solid.svg"
+import Hminus from "../../assets/icons/heart-circle-minus-solid.svg"
+import { useState } from "react"
 
+const Detail = () => {
+    const [Clicked, setClicked] = useState(false)
+    const display = (e) => {
+        e.preventDefault();
+        setClicked(true)
+    }
     return (
         <div className="detail">
         <div className ="container">
@@ -64,7 +72,6 @@ const Detail = () => {
                                         </div>
                                         <span className ="mini-text">(2,518)</span>
                                     </div>
-                                    <h3 className ="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
                                     <div className ="price">
                                         <span className ="current">$129.90</span>
                                         <span className ="normal mini-text">$189.90</span>
@@ -127,8 +134,10 @@ const Detail = () => {
                                  </div>
                             </div>
                             <div className="pro-shope">
-                                <div className="wishlist"></div>
-                                <div className="share"></div>
+                                <div className="wishlist" title = "Wishlist">
+                                    <img src=  {Hplus} alt="" />
+                                </div>
+                                <div className="share" title = "Wishlist"></div>
                                 <button><img src= {CartPlus} alt="" /> Add to Cart</button>
                             </div>
                             

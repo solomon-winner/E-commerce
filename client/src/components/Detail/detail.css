@@ -150,6 +150,7 @@ opacity: 1;
 .products .content {
     display: flex;
     flex-direction: column;
+    gap: 1em;
 }
 .products:where(.big, .main.one) .content {
     gap: 1em;
@@ -220,7 +221,7 @@ overflow: hidden;
 .description {
 display: flex;
 flex-direction: column;
-gap: 2em;
+gap: 1em;
 }
 .pro-color div:not(.sectop, .colors) {
     width: 40px;
@@ -265,6 +266,14 @@ gap: 2em;
     height: 10%;
 
 }
+.pro-size ul>li:hover, .pro-shope .wishlist:hover {
+    background-color: var(--dark-color);
+    color: white;
+}
+.pro-shope .wishlist {
+    width: 10%;
+    height: 10%;
+}
 .usr-cmt {
     display: flex;
     flex-direction: column;
@@ -290,6 +299,11 @@ gap: 2em;
 }.pro-shope {
     display: flex;
     gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.pro-shope button:hover {
+    background-color: var(--dark-color);
 }
 .pro-shope button {
     color: white;
