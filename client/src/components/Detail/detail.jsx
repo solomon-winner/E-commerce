@@ -8,7 +8,7 @@ import Electronic2 from "../../assets/img/products/electronic2.jpg"
 import Electronic3 from "../../assets/img/products/electronic3.jpg"
 import Shoes1 from "../../assets/img/products/shoe1.jpg"
 import Shoes2 from "../../assets/img/products/shoe2.jpg"
-import Arrow from "../../assets/icons/arrow-right-long-solid";
+import Arrow from "../../assets/icons/arrow-right-long-solid.svg";
 const Detail = () => {
     return (
         <div className="detail">
@@ -116,8 +116,9 @@ const Detail = () => {
                             <div className ="sectop flexitem">
                               <h3><span>Comments About the product</span></h3>
                              </div>
-                             <div className="user-cmt">
+                             <div className="usr-cmt">
                                 <div className="usr">
+                                    <div className="pic"></div>
                                    <span>Solomon Yalew</span> 
                                 </div>
                                 <div className="stars"></div>
