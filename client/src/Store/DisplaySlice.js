@@ -7,10 +7,10 @@ export const DisplaySlice = createSlice({
     },
     reducers: {
         Display(state, action){
-
+            state.Displayed = true
         },
         DontDisplay(state, action) {
-
+            state.Displayed = false
         }
     }
 })

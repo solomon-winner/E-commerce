@@ -5,7 +5,8 @@ import { useDispatch, useSelector } from "react-redux"
 import { DisplayActions } from "../../Store/DisplaySlice"
 
 const Departments = () => {
-    const displayer = useSelector((state) => state.displayed)
+    const displayer = useSelector((state) => state.Displayed)
+    console.log(displayer)
     const dispatch = useDispatch();
     // const [Clicked, setClicked] =useState(false);
     // const seeDpt = (e) => {
@@ -14,7 +15,7 @@ const Departments = () => {
     //     setClicked(!Clicked);
     // }
     const display = (e) => {
-        e.preventDefault();
+        e.preventDefault()
         dispatch(DisplayActions.DontDisplay())
     }
     const DontDisplay = () => {
@@ -30,10 +31,10 @@ const Departments = () => {
                             <a href="" className="dpt-trigger mobile-hide">
                             <img src= {Bars} alt="" style={{
                                 display: displayer ? 'none' : 'block'
-                               }} onClick={display()}/>
+                               }} onClick={display}/>
                                <img src= {Cross} alt="" style={{
                                 display: displayer ? 'block' : 'none'
-                               }} onClick={DontDisplay()}/>
+                               }} onClick={DontDisplay}/>
                             </a>
                         </div>
 
