@@ -11,6 +11,15 @@ export const Wishslice = createSlice({
         quantity: 0,
     },
     reducers: {
-        
+        AddWishlist(state, action) {
+
+        },
+        ChangeWishlist(state, action) {
+
+        },
+        DeleteWishlist(state, action) {
+
+        }
     }
-})
+});
+export const WishActions = Wishslice.actions;
