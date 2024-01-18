@@ -11,9 +11,9 @@ const HeadList = () => {
             <div className ="wrapper flexitem">
                 <a href = "/" className ="trigger desktop-hide"><span className ="i ri-menu-2-line"></span></a>
                 <div className ="left flexitem">
-                    <Link to = "/">
-                  <div className ="logo"><a href = "#"><span className ="circle"></span>.suk</a></div>
-                    </Link>
+                    
+                  <div className ="logo"><Link to = "/"><span className ="circle"></span>.suk</Link></div>
+                    
                     <nav className ="mobile-hide">
                         <ul className ="flexitem second-links">
 
@@ -39,12 +39,12 @@ const HeadList = () => {
                 <div className = "right">
                     <ul className = "flexitem second-links">
                         <li className   = " mobile-hide "><a href = "#">
-                            <div className = "icon-large"><img src= {Heart} alt="" /></div>
+                            <div className = "icon-large"><img src= {Heart} alt="" title = "WishList"/></div>
                             {/* <div className = "fly-item"><span className = "item-number">0</span></div> */}
                         </a></li>
                         <li><a href ="#" className   = "iscart">
                             <div className = "icon-large">
-                                <img src= {Cart} alt="" />
+                                <img src= {Cart} alt="" title = "Cart"/>
                                 {/* <div className = "fly-item"><span className = "item-number">0</span></div> */}
 
                             </div>
