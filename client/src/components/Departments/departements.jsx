@@ -16,10 +16,10 @@ const Departments = () => {
     // }
     const display = (e) => {
         e.preventDefault()
-        dispatch(DisplayActions.DontDisplay())
+        dispatch(DisplayActions.DontDisplay(false))
     }
     const DontDisplay = () => {
-        dispatch(DisplayActions.Display())
+        dispatch(DisplayActions.Display(true))
     }
 
     return (
