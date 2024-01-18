@@ -10,7 +10,9 @@ export const DisplaySlice = createSlice({
 
         },
         DontDisplay(state, action) {
-            
+
         }
     }
 })
+
+export const DisplayActions = DisplaySlice.actions

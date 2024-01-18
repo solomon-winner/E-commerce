@@ -1,14 +1,24 @@
 import "./departements.css"
 import Bars from "../../assets/icons/bars.svg"
 import Cross from "../../assets/icons/xmark-solid.svg"
-import { useState } from "react"
+import { useDispatch, useSelector } from "react-redux"
+import { DisplayActions } from "../../Store/DisplaySlice"
 
 const Departments = () => {
-    const [Clicked, setClicked] =useState(false);
-    const seeDpt = (e) => {
-        e.preventDefault()
-        const Current = Clicked
-        setClicked(!Clicked);
+    const displayer = useSelector((state) => state.displayed)
+    const dispatch = useDispatch();
+    // const [Clicked, setClicked] =useState(false);
+    // const seeDpt = (e) => {
+    //     e.preventDefault()
+    //     const Current = Clicked
+    //     setClicked(!Clicked);
+    // }
+    const display = (e) => {
+        e.preventDefault();
+        dispatch(DisplayActions.DontDisplay())
+    }
+    const DontDisplay = () => {
+        dispatch(DisplayActions.Display())
     }
 
     return (
@@ -19,16 +29,16 @@ const Departments = () => {
                             <div className="mini-text mobile-hide">Total 1059 Products</div>
                             <a href="" className="dpt-trigger mobile-hide">
                             <img src= {Bars} alt="" style={{
-                                display: Clicked ? 'none' : 'block'
-                               }} onClick={seeDpt}/>
+                                display: displayer ? 'none' : 'block'
+                               }} onClick={display()}/>
                                <img src= {Cross} alt="" style={{
-                                display: Clicked ? 'block' : 'none'
-                               }} onClick={seeDpt}/>
+                                display: displayer ? 'block' : 'none'
+                               }} onClick={DontDisplay()}/>
                             </a>
                         </div>
 
                     <div className="dpt-menu" style = {{
-                        display: Clicked ?  'block': 'none'
+                        display: displayer ?  'block': 'none'
                     }}>
                         <ul className="second-links">
                             <li className = "has-child beauty">
