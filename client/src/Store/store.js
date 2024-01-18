@@ -1,6 +1,30 @@
-import {configureStor, createSlice} from "@reduxjs/toolkit";
+import {configureStore, createSlice} from "@reduxjs/toolkit";
 
-const Eslice = createSlice({
-    name: 'E',
-    
+const Cartslice = createSlice({
+    name: 'Cart',
+    initialState: {
+        Product: "",
+        Company: "",
+        Color: "",
+        Size: "",
+        Price: "",
+        Payment: "none"
+    },
+    reducers : {
+        AddToCart(state, action) {
+
+        },
+        ChangeChoice(state, action) {
+
+        },
+        DeleteFromCart(state, action) {
+
+        }
+    }
+})
+export const CartActions = Cartslice.actions;
+const store = configureStore({
+    reducer: {
+        Cart: Cartslice.reducer
+    }
 })
