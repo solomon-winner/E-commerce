@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { DisplayActions } from "../../Store/DisplaySlice"
 
 const Departments = () => {
-    const displayer = useSelector((state) => state.Displayed)
+    const displayer = useSelector((state) => state.Display.isDisplayed)
     console.log(displayer)
     const dispatch = useDispatch();
     // const [Clicked, setClicked] =useState(false);

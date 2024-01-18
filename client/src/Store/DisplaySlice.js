@@ -3,16 +3,17 @@ import { createSlice } from "@reduxjs/toolkit";
 export const DisplaySlice = createSlice({
     name: 'Display',
     initialState: {
-        Displayed: false,
+        isDisplayed: false,
     },
     reducers: {
         Display(state, action){
-            state.Displayed = true
+            state.Display = true
         },
         DontDisplay(state, action) {
-            state.Displayed = false
+            state.Display = false
         }
     }
 })
+
 
 export const DisplayActions = DisplaySlice.actions

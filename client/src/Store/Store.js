@@ -4,6 +4,7 @@ import { Wishslice } from "./Wishslice";
 import { CommentSlice } from "./CommentSlice";
 import { DisplaySlice } from "./DisplaySlice";
 
+
 const Store = configureStore({
     reducer: {
         Cart: Cartslice.reducer,
