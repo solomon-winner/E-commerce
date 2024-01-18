@@ -2,7 +2,7 @@ import "./headList.css"
 import Cart from "../../../assets/icons/cart-shopping-solid.svg"
 import Heart from "../../../assets/icons/heart-solid.svg"
 import Mega from "../Mega/Mega"
-
+import {Outlet, Link} from "react-router-dom"
 const HeadList = () => {
     return (
         <div className="headList">
@@ -11,10 +11,14 @@ const HeadList = () => {
             <div className ="wrapper flexitem">
                 <a href = "/" className ="trigger desktop-hide"><span className ="i ri-menu-2-line"></span></a>
                 <div className ="left flexitem">
-                    <div className ="logo"><a href = "#"><span className ="circle"></span>.suk</a></div>
+                    <Link to = "/">
+                  <div className ="logo"><a href = "#"><span className ="circle"></span>.suk</a></div>
+                    </Link>
                     <nav className ="mobile-hide">
                         <ul className ="flexitem second-links">
-                            <li><a href = "#">Home</a></li>
+
+                            <li><Link to = "/">Home</Link></li>
+                            
                             <li><a href = "#">shope</a></li>
                             <li className  = "has-child">
                             <a href = "#">Women
@@ -53,6 +57,8 @@ const HeadList = () => {
                 </div>
             </div>
         </div>
+        <Outlet/>
+
         </div>
     )
 }
