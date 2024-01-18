@@ -3,11 +3,11 @@ import { Cartslice } from "./Cartslice";
 import { Wishslice } from "./Wishslice";
 import { CommentSlice } from "./CommentSlice";
 
-const store = configureStore({
+const Store = configureStore({
     reducer: {
         Cart: Cartslice.reducer,
         Wish: Wishslice.reducer,
         Comment: CommentSlice.reducer,
     }
 })
-export default store;
+export default Store;
