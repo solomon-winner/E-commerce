@@ -8,7 +8,7 @@ import Electronic2 from "../../assets/img/products/electronic2.jpg"
 import Electronic3 from "../../assets/img/products/electronic3.jpg"
 import Shoes1 from "../../assets/img/products/shoe1.jpg"
 import Shoes2 from "../../assets/img/products/shoe2.jpg"
-import { Outlet, Link} from "react-router-dom"
+import { Link} from "react-router-dom"
 
 const Trending = () => {
     return (
@@ -20,7 +20,6 @@ const Trending = () => {
                 </div>
                 <div className ="column">
                     <div className ="flexwrap">
-                        <Link to = "/product">
                             <div className ="row products big">
                             <div className ="item">
                                 <div className ="offer">
@@ -33,6 +32,8 @@ const Trending = () => {
 
                                     </ul>
                                 </div>
+                                <Link to = "/product">
+
                                 <div className ="media">
                                     <div className ="image">
                                         <a href="#">
@@ -49,14 +50,16 @@ const Trending = () => {
 
                                     </div>
                                     <div className ="discount center flexcenter"><span>31%</span></div>
-                                </div>
+                                </div>                                                          
+                                  </Link>
+
                                 <div className ="content">
                                     <div className ="rating">
                                         <div className ="stars">
                                         </div>
                                         <span className ="mini-text">(2,518)</span>
                                     </div>
-                                    <h3 className ="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                    <h3 className ="main-links"><Link to = "/product">Happy Sailed Womens Summer Boho Floral</Link></h3>
                                     <div className ="price">
                                         <span className ="current">$129.90</span>
                                         <span className ="normal mini-text">$189.90</span>
@@ -74,7 +77,7 @@ const Trending = () => {
                                 </div>
                             </div>
                         </div>
-                        </Link>
+
                         
                         <div className ="row products mini">
 
@@ -409,7 +412,6 @@ const Trending = () => {
                 </div>
             </div>
         </div>
-        <Outlet/>
     </div>
     )
 }
