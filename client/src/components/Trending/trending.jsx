@@ -8,7 +8,7 @@ import Electronic2 from "../../assets/img/products/electronic2.jpg"
 import Electronic3 from "../../assets/img/products/electronic3.jpg"
 import Shoes1 from "../../assets/img/products/shoe1.jpg"
 import Shoes2 from "../../assets/img/products/shoe2.jpg"
-
+import { Outlet, Link} from "react-router-dom"
 
 const Trending = () => {
     return (
@@ -20,7 +20,8 @@ const Trending = () => {
                 </div>
                 <div className ="column">
                     <div className ="flexwrap">
-                        <div className ="row products big">
+                        <Link to = "/product">
+                            <div className ="row products big">
                             <div className ="item">
                                 <div className ="offer">
                                     <p>Offer ends at</p>
@@ -73,6 +74,8 @@ const Trending = () => {
                                 </div>
                             </div>
                         </div>
+                        </Link>
+                        
                         <div className ="row products mini">
 
                             <div className ="item">
@@ -406,6 +409,7 @@ const Trending = () => {
                 </div>
             </div>
         </div>
+        <Outlet/>
     </div>
     )
 }
