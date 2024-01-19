@@ -1,6 +1,6 @@
 import "./Cart.css"
 import Cross from "../../assets/icons/xmark-solid.svg"
-
+import Down from "../../assets/icons/chevron-down-solid.svg" 
 const Cart = () => {
     return (
         <div className="cart">
@@ -14,12 +14,12 @@ const Cart = () => {
                             <img className = "cross" src= {Cross} alt="" />
                         </div>
                         <div className="cartItem">
-                            <span>Shoes</span>
-                            <span>Shoes</span>
-                            <span>Shoes</span>
-                            <span>Shoes</span>
-                            <span>Shoes</span>
-                            <span>Shoes</span>
+                            <span>Shoes <img src= {Down} alt="" /></span>
+                            <span>Shoes <img src= {Down} alt="" /></span>
+                            <span>Shoes <img src= {Down} alt="" /></span>
+                            <span>Shoes <img src= {Down} alt="" /></span>
+                            <span>Shoes <img src= {Down} alt="" /></span>
+                            <span>Shoes <img src= {Down} alt="" /></span>
                             <span className="button"><button>Payment</button></span>
                         </div>
                         

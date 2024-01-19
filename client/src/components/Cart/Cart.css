@@ -28,6 +28,9 @@
     padding-left: 5%;
 }
 .cartItem span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     padding: 1em 1em;
     border-bottom: 1px solid var(--border-color);
