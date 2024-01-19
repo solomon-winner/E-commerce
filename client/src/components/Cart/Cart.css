@@ -11,8 +11,11 @@
     width: 16px;
 }
 .cartlefthead .main-text {
-    height: 50px;
-    width: 100px;
+    font-size: 20px;
+   
+}
+.cartlefthead  .mini-text {
+    color: var(--white-color);
 }
 .cartItem {
     display: flex;
@@ -37,4 +40,18 @@
     display: flex;
     font-weight: smaller;
     justify-content: space-between;
+}
+.cartItem .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartItem .button button {
+    color: var(--white-color);
+    width: 45%;
+    background-color: var(--primary-color);
+    padding: 1em 1em;
+    border-color: none;
+    border-radius: 10px;
+
 }

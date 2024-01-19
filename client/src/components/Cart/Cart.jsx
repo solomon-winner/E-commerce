@@ -8,7 +8,7 @@ const Cart = () => {
                         <div className="cartHead">
                             <div className="cartlefthead">
                                <div className="main-text">Cart list</div>
-                            <div className="mini-text mobile-hide">Total 1059 Products</div> 
+                            <div className="mini-text">Total 1059 Products</div> 
                             </div>
                         
                             <img className = "cross" src= {Cross} alt="" />
@@ -20,7 +20,7 @@ const Cart = () => {
                             <span>Shoes</span>
                             <span>Shoes</span>
                             <span>Shoes</span>
-                            <span><button>Payment</button></span>
+                            <span className="button"><button>Payment</button></span>
                         </div>
                         
                     </div>
