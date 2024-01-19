@@ -1,7 +1,15 @@
 import "./Cart.css"
 import Cross from "../../assets/icons/xmark-solid.svg"
 import Down from "../../assets/icons/chevron-down-solid.svg" 
+import { DisplayActions } from "../../Store/DisplaySlice"
+import { useDispatch } from "react-redux"
+
 const Cart = () => {
+    const dispatch = useDispatch();
+    const DontDisplayCart = (e) => {
+        e.preventDefault();
+        dispatch(DisplayActions.DontDisplayDpt(false));
+    }
     return (
         <div className="cart">
                     <div className="cartlist">
@@ -11,7 +19,7 @@ const Cart = () => {
                             <div className="mini-text">Total 1059 Products</div> 
                             </div>
                         
-                            <img className = "cross" src= {Cross} alt="" />
+                            <img className = "cross" src= {Cross} alt="" onClick = {DontDisplayCart}/>
                         </div>
                         <div className="cartItem">
                             <span>Shoes <img src= {Down} alt="" /></span>

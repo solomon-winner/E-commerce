@@ -3,15 +3,26 @@ import { createSlice } from "@reduxjs/toolkit";
 export const DisplaySlice = createSlice({
     name: 'Display',
     initialState: {
-        isDisplayed: false,
+        isDptDisplayed: false,
+        isCartDisplayed: false,
     },
     reducers: {
-        Display(state, action){
+        DisplayDpt(state, action){
+            console.log("state.isCartDisplayed from Display : " + state.isCartDisplayed)
             console.log("this is from the paylod => " + action.payload)
-            state.isDisplayed = action.payload
+            state.isDptDisplayed = action.payload
         },
-        DontDisplay(state, action) {
-            state.isDisplayed = action.payload
+        DontDisplayDpt(state, action) {
+
+            state.isDptDisplayed = action.payload;
+            console.log("state.isCartDisplayed from DontDisplay : " + state.isCartDisplayed)
+
+        },
+        DisplayCart (state, action) {
+            state.isCartDisplayed = action.payload
+        },
+        DontDisplayCart (state, action) {
+            state.isDptDisplayed = action.payload
         }
     }
 })

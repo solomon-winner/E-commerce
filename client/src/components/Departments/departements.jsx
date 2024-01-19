@@ -5,19 +5,20 @@ import { useDispatch, useSelector } from "react-redux"
 import { DisplayActions } from "../../Store/DisplaySlice"
 
 const Departments = () => {
-    const displayer = useSelector((state) => state.Display.isDisplayed)
+    const displayer = useSelector((state) => state.Display.isDptDisplayed)
     console.log(displayer)
+
     const dispatch = useDispatch();
     
     const display = (e) => {
         e.preventDefault()
         console.log("........................" + displayer)
         
-        dispatch(DisplayActions.Display(true))
+        dispatch(DisplayActions.DisplayDpt(true))
     }
     const DontDisplay = (e) => {
         e.preventDefault()
-        dispatch(DisplayActions.DontDisplay(false))
+        dispatch(DisplayActions.DontDisplayDpt(false))
     }
 
     return (

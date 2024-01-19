@@ -2,9 +2,18 @@ import "./headList.css"
 import Cart from "../../../assets/icons/cart-shopping-solid.svg"
 import Heart from "../../../assets/icons/heart-solid.svg"
 import Mega from "../Mega/Mega"
-import {Outlet, Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 import CartList from "../../Cart/Cart";
+import { useDispatch, useSelector } from "react-redux"
+import { DisplayActions } from "../../../Store/DisplaySlice"
+
 const HeadList = () => {
+    const displayer = useSelector((state) => state.isCartDisplayed)
+   const dispatch = useDispatch();
+   const DisplayCart = (e) => {
+    e.preventDefault();
+    dispatch(DisplayActions.DisplayCart(true));
+   }
     return (
         <div className="headList">
             
@@ -45,8 +54,8 @@ const HeadList = () => {
                         </a></li>
                         <li><a href ="#" className   = "iscart">
                             <div className = "icon-large">
-                                <img src= {Cart} alt="" title = "Cart"/>
-                                <CartList/>
+                                <img src= {Cart} alt="" title = "Cart" onClick = {DisplayCart}/>
+                                {displayer && <CartList/>}
                                 {/* <div className = "fly-item"><span className = "item-number">0</span></div> */}
 
                             </div>
@@ -59,8 +68,6 @@ const HeadList = () => {
                 </div>
             </div>
         </div>
-        <Outlet/>
-
         </div>
     )
 }
