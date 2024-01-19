@@ -7,7 +7,7 @@ const HeaderMain = () => {
 
             
         <div className="HeaderMain">
-            <div class="container">
+            <div className="container">
                 <div class="wrapper flexitem">
                 <Departments/>
                 <div className = "right">
