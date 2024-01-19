@@ -37,6 +37,9 @@
     font-size: small;
     font-family: 'Courier New', Courier, monospace;
 }
+.cartItem span img {
+    cursor: pointer;
+}
 .cartlist .cartHead {
     display: flex;
     align-items: center;

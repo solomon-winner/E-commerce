@@ -23,6 +23,7 @@ const Cart = () => {
                         </div>
                         <div className="cartItem">
                             <span>Shoes <img src= {Down} alt="" /></span>
+                            
                             <span>Shoes <img src= {Down} alt="" /></span>
                             <span>Shoes <img src= {Down} alt="" /></span>
                             <span>Shoes <img src= {Down} alt="" /></span>

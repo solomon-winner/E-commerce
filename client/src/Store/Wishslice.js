@@ -12,7 +12,7 @@ export const Wishslice = createSlice({
     },
     reducers: {
         AddWishlist(state, action) {
-
+            
         },
         ChangeWishlist(state, action) {
 
