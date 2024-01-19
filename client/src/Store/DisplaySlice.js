@@ -7,6 +7,7 @@ export const DisplaySlice = createSlice({
     },
     reducers: {
         Display(state, action){
+            console.log("this is from the paylod => " + action.payload)
             state.isDisplayed = action.payload
         },
         DontDisplay(state, action) {
@@ -14,5 +15,7 @@ export const DisplaySlice = createSlice({
         }
     }
 })
+export const DisplayActions = DisplaySlice.actions
+
 
 

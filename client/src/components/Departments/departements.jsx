@@ -8,18 +8,16 @@ const Departments = () => {
     const displayer = useSelector((state) => state.Display.isDisplayed)
     console.log(displayer)
     const dispatch = useDispatch();
-    // const [Clicked, setClicked] =useState(false);
-    // const seeDpt = (e) => {
-    //     e.preventDefault()
-    //     const Current = Clicked
-    //     setClicked(!Clicked);
-    // }
+    
     const display = (e) => {
         e.preventDefault()
-        dispatch(DisplayActions.DontDisplay(false))
-    }
-    const DontDisplay = () => {
+        console.log("........................" + displayer)
+        
         dispatch(DisplayActions.Display(true))
+    }
+    const DontDisplay = (e) => {
+        e.preventDefault()
+        dispatch(DisplayActions.DontDisplay(false))
     }
 
     return (
