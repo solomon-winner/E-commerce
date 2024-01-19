@@ -27,12 +27,9 @@ const Departments = () => {
                             <div className="main-text">All Depatements</div>
                             <div className="mini-text mobile-hide">Total 1059 Products</div>
                             <a href="" className="dpt-trigger mobile-hide">
-                            <img src= {Bars} alt="" style={{
-                                display: displayer ? 'none' : 'block'
-                               }} onClick={display}/>
-                               <img src= {Cross} alt="" style={{
-                                display: displayer ? 'block' : 'none'
-                               }} onClick={DontDisplay}/>
+                            {!displayer && <img src= {Bars} alt=""  onClick={display}/>}
+                               {displayer && <img src= {Cross} alt="" 
+                                onClick={DontDisplay}/>}
                             </a>
                         </div>
 
