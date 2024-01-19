@@ -1,0 +1,69 @@
+.Wish {
+    width: 300px;
+    position: absolute;
+    top: 200%;
+    left: -110%;
+    z-index: 555;
+    background-color: var(--white-color);
+    cursor:default;
+
+}
+.cross {
+    height:18px;
+    width: 16px;
+    cursor: pointer;
+}
+.Wishlefthead .main-text {
+    font-size: 20px;
+   
+}
+.Wishlefthead  .mini-text {
+    color: var(--white-color);
+}
+.WishItem {
+    display: flex;
+    flex-direction: column;
+    border:1px solid var(--border-color);
+    padding-left: 5%;
+}
+.WishItem span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em 1em;
+    border-bottom: 1px solid var(--border-color);
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Wishlist .WishHead {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5em 0.5em;
+    border-radius: 7px 7px 0 0;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    font-weight: smaller;
+    justify-content: space-between;
+}
+.WishItem .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.WishItem .button button {
+    color: var(--white-color);
+    width: 65%;
+    background-color: var(--primary-color);
+    padding: 1em 1em;
+    border-color: none;
+    border-radius: 10px;
+
+}
+.WishItem .button button:hover {
+    background-color: var(--dark-color);
+    cursor: pointer;
+}
