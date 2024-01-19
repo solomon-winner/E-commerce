@@ -16,4 +16,3 @@ export const DisplaySlice = createSlice({
 })
 
 
-export const DisplayActions = DisplaySlice.actions

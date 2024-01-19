@@ -13,4 +13,5 @@ const Store = configureStore({
         Display: DisplaySlice.reducer
     }
 })
+export const {DisplayActions} = DisplaySlice.actions
 export default Store;
