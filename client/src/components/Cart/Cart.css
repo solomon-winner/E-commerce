@@ -3,14 +3,16 @@
     border:1px solid var(--border-color);
     position: absolute;
     top: 100%;
-    right: 10px;
+    left: -95%;
     z-index: 555;
     background-color: var(--white-color);
 }
 .cartItem {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    padding: 1em 1em;
+    border-bottom: 1px solid var(--border-color);
+
 }
 .cartItem span {
      background-color: var(--border-color);
