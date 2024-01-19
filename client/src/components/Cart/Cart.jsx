@@ -8,7 +8,7 @@ const Cart = () => {
     const dispatch = useDispatch();
     const DontDisplayCart = (e) => {
         e.preventDefault();
-        dispatch(DisplayActions.DontDisplayDpt(false));
+        dispatch(DisplayActions.DontDisplayCart(false));
     }
     return (
         <div className="cart">

@@ -22,7 +22,7 @@ export const DisplaySlice = createSlice({
             state.isCartDisplayed = action.payload
         },
         DontDisplayCart (state, action) {
-            state.isDptDisplayed = action.payload
+            state.isCartDisplayed = action.payload
         }
     }
 })

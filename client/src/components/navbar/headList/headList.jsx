@@ -8,10 +8,11 @@ import { useDispatch, useSelector } from "react-redux"
 import { DisplayActions } from "../../../Store/DisplaySlice"
 
 const HeadList = () => {
-    const displayer = useSelector((state) => state.isCartDisplayed)
+    const displayer = useSelector((state) => state.Display.isCartDisplayed)
    const dispatch = useDispatch();
    const DisplayCart = (e) => {
     e.preventDefault();
+    console.log("....this is fro cart list" + "")
     dispatch(DisplayActions.DisplayCart(true));
    }
     return (
