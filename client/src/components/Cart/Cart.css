@@ -1,5 +1,20 @@
 .cart {
-    width: 30%;
+    width: 300px;
     border:1px solid var(--border-color);
     position: absolute;
+    top: 100%;
+    right: 10px;
+    z-index: 555;
+    background-color: var(--white-color);
+}
+.cartItem {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.cartItem span {
+     background-color: var(--border-color);
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
 }

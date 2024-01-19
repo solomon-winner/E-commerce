@@ -2,6 +2,7 @@
     padding: 0.5em 0;
     margin-bottom:1.5em;
     border-bottom: 1px solid var(--border-color);
+    position: relative;
 }
 .trigger {
     font-size:1.5em;
