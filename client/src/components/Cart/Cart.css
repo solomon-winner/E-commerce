@@ -5,10 +5,14 @@
     left: -95%;
     z-index: 555;
     background-color: var(--white-color);
+    cursor:default;
+
 }
 .cross {
     height:18px;
     width: 16px;
+    cursor: pointer;
+
 }
 .cartlefthead .main-text {
     font-size: 20px;
@@ -21,6 +25,7 @@
     display: flex;
     flex-direction: column;
     border:1px solid var(--border-color);
+    padding-left: 5%;
 }
 .cartItem span {
     width: 100%;
@@ -45,13 +50,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .cartItem .button button {
     color: var(--white-color);
-    width: 45%;
+    width: 65%;
     background-color: var(--primary-color);
     padding: 1em 1em;
     border-color: none;
     border-radius: 10px;
 
+}
+.cartItem .button button:hover {
+    background-color: var(--dark-color);
+    cursor: pointer;
 }
