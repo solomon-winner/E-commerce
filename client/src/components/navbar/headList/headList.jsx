@@ -3,6 +3,7 @@ import Cart from "../../../assets/icons/cart-shopping-solid.svg"
 import Heart from "../../../assets/icons/heart-solid.svg"
 import Mega from "../Mega/Mega"
 import {Outlet, Link} from "react-router-dom"
+import CartList from "../../Cart/Cart";
 const HeadList = () => {
     return (
         <div className="headList">
@@ -45,6 +46,7 @@ const HeadList = () => {
                         <li><a href ="#" className   = "iscart">
                             <div className = "icon-large">
                                 <img src= {Cart} alt="" title = "Cart"/>
+                                <CartList/>
                                 {/* <div className = "fly-item"><span className = "item-number">0</span></div> */}
 
                             </div>

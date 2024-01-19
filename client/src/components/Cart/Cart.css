@@ -1,0 +1,5 @@
+.cart {
+    width: 30%;
+    border:1px solid var(--border-color);
+    position: absolute;
+}
