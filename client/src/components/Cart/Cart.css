@@ -10,13 +10,18 @@
 .cartItem {
     display: flex;
     flex-direction: column;
-    padding: 1em 1em;
-    border-bottom: 1px solid var(--border-color);
-
 }
 .cartItem span {
-     background-color: var(--border-color);
+    width: 100%;
+    padding: 1em 1em;
+    border-bottom: 1px solid var(--border-color);
     font-size: medium;
     font-weight: 200;
     font-family: 'Courier New', Courier, monospace;
+}
+.cartlist .cartHead {
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
 }
