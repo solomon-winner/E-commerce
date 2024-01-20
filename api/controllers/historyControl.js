@@ -1,1 +1,1 @@
-export default  addHistory = () => {}
+export const addHistory = () => {}
