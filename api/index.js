@@ -1,9 +1,9 @@
 import express from "express";
-// import UserRoutes from "./routes/users.js"
-// import ProductRoutes from "./routes/Product.js"
-// import ProductsRoutes from "./routes/Products.js"
-// import WishRoutes from "./routes/Wish.js"
-// import HistoryRoutes from "./routes/History.js"
+import UserRoutes from "./routes/users.js"
+import ProductRoutes from "./routes/product.js"
+import ProductsRoutes from "./routes/products.js"
+import WishRoutes from "./routes/wish.js"
+import HistoryRoutes from "./routes/history.js"
 import cors from "cors";
 import cookieParser from "cookie-parser";
 
