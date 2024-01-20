@@ -20,6 +20,12 @@ app.use(cors({
 
 app.use(cookieParser());
 
+app.use("/api/users", UserRoutes)
+app.use("/api/product", ProductRoutes)
+app.use("/api/products", ProductsRoutes)
+app.use("/api/wish", WishRoutes)
+app.use("/api/history", HistoryRoutes)
+
 app.listen(8800, () => {
     console.log(" I am listening port 8800!")
 })
