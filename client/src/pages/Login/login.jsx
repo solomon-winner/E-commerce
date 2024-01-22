@@ -7,7 +7,10 @@ const Login = () => {
                 <form>
                     <h1>Create Account</h1>
                     <div className="socia-icons">
-                        
+                        <a href="#" className="icon"></a>
+                        <a href="#" className="icon"></a>
+                        <a href="#" className="icon"></a>
+                        <a href="#" className="icon"></a>
                     </div>
                 </form>
             </div>
