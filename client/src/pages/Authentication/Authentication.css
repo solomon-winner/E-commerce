@@ -33,3 +33,7 @@
     margin-top: 10px;
     cursor: pointer;
 }
+.Authentication button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
