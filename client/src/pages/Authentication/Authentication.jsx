@@ -2,7 +2,7 @@ import "./login.css"
 
 const Login = () => {
     return (
-        <div className="login" id = "login">
+        <div className="Authentication" id = "Authentication">
             <div className="form-container sign-up">
                 <form>
                     <h1>Create Account</h1>
