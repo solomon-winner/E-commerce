@@ -2,7 +2,16 @@ import "./login.css"
 
 const Login = () => {
     return (
-        <div className="login"></div>
+        <div className="login" id = "login">
+            <div className="form-container sign-up">
+                <form>
+                    <h1>Create Account</h1>
+                    <div className="socia-icons">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
     )
 }
 
