@@ -12,6 +12,12 @@ const Login = () => {
                         <a href="#" className="icon"></a>
                         <a href="#" className="icon"></a>
                     </div>
+                    <span>Or use Your Email for Registration</span>
+
+                    <input type="text" placeholder="Name"/>
+                    <input type="email" placeholder="Email"/>
+                    <input type="password" placeholder="password"/>
+                    <button>Sign Up</button>
                 </form>
             </div>
         </div>
