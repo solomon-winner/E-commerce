@@ -56,7 +56,8 @@ const Login = () => {
                         <button className="hidden" onClick = {AuthToggle}>Sign In</button>
                     </div>
                     <div className="toggle-panel toggle-right">
-                        <h1>Hello, Friend</h1>
+                        <h1>Suk</h1>
+                        <p>Discover More, Shop Smarter</p>
                         <p>Register Here!</p>
                         <button className="hidden" onClick = {AuthToggle}>
                             Sign Up
