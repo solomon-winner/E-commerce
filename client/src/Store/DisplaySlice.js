@@ -6,6 +6,7 @@ export const DisplaySlice = createSlice({
         isDptDisplayed: false,
         isCartDisplayed: false,
         isWishDisplayed: false,
+        isAuthToggled: false,
     },
     reducers: {
         //this is for the departement menu
@@ -34,6 +35,8 @@ export const DisplaySlice = createSlice({
         DontDisplayWish (state, action) {
             state.isWishDisplayed = action.payload
         }
+
+        //this is for the Authtntication
     }
 })
 export const DisplayActions = DisplaySlice.actions

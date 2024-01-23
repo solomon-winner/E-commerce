@@ -1,6 +1,11 @@
+import { useSelector } from "react-redux"
 import "./Authentication.css"
 
 const Login = () => {
+    const active = useSelector((state) => state.Display.isAuthToggled)
+    const AuthToggle = () => {
+
+    }
     return (
         <div className="wrapper">
 
@@ -50,7 +55,7 @@ const Login = () => {
                     <div className="toggle-panel toggle-right">
                         <h1>Hello, Friend</h1>
                         <p>Register Here!</p>
-                        <button className="hidden" id="register">
+                        <button className="hidden" onClick = {AuthToggle}>
                             Sign Up
                         </button>
                     </div>
