@@ -97,9 +97,11 @@
     z-index: 5;
     animation : move 0.6s;
 }
-.sign-form .right-arrow {
+.form-container .right-arrow {
+    position: absolute;
     align-self: flex-end;
     width: 150px;
+    right:0%;
     background-color: white;
     border-radius: 10%;
     padding: 1em 1em;
