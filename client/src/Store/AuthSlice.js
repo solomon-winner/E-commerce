@@ -2,21 +2,24 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const AuthSlice = createSlice ({
     name: "Authentication",
-    initialState:[{
-        Name: "",
-        Nitche: "",
-        Bank: "",
-        Bankaccount: "",
-        Password: "",
-        Email: "",
-        Country: "",
-        City: "",
-        subCity: "",
-        street: "",
-    },{
-        Email: "",
-        Password: ""
-    }],
+    initialState: {
+        signUp: {
+            Name: "",
+            Nitche: "",
+            Bank: "",
+            Bankaccount: "",
+            Password: "",
+            Email: "",
+            Country: "",
+            City: "",
+            subCity: "",
+            street: "",
+        },
+        login:{
+            Email: "",
+            Password: ""
+        }
+    },
     reducers: {
         logIn (state, action) {
 
@@ -25,9 +28,9 @@ export const AuthSlice = createSlice ({
 
         },
         handleChange (state, action) {
-            console.log(action.payload);
-            state.Authentication[0].action.payload[0] = action.payload[1];
-            console.log(state.Authentication[0]);
+           // state.Authentication.signUp.action.payload[0] = action.payload[1];
+            console.log(state.Authentication.signUp);
+            console.log("......."+state.Authentication.signUp.action.payload[0]) 
         }
     }
 
