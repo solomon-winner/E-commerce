@@ -52,13 +52,13 @@ const Login = () => {
                 <form>
                     <div className="radio">
                         <label>
-                        <input type="radio" name="Nitche" value="Buyer"/> Buyer
+                        <input type="radio" name="Nitche" value="Buyer" onChange={handleChange}/> Buyer
                     </label>
                     <label>
-                        <input type="radio" name="Nitche" value="Seller"/> Seller
+                        <input type="radio" name="Nitche" value="Seller" onChange={handleChange}/> Seller
                     </label>
                     <label>
-                        <input type="radio" name="Nitche" value="Both"/> Both
+                        <input type="radio" name="Nitche" value="Both" onChange={handleChange}/> Both
                     </label>
                     </div>
                     <br />
