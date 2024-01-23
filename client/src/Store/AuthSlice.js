@@ -18,7 +18,13 @@ export const AuthSlice = createSlice ({
         Password: ""
     }],
     reducers: {
-        
+        logIn (state, action) {
+
+        },
+        signUp (state, action) {
+
+        }
     }
 
-})
+ })
+ export const AuthActions = AuthSlice.actions;

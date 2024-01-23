@@ -1,6 +1,8 @@
 import { useDispatch, useSelector } from "react-redux"
 import "./Authentication.css"
 import { DisplayActions } from "../../Store/DisplaySlice"
+import ArrowRight from "../../assets/icons/arrow-right-long-solid.svg"
+import ArrowLeft from "../../assets/icons/arrow-left-long-solid.svg"
 
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled)
@@ -9,13 +11,13 @@ const Login = () => {
         e.preventDefault()
         dispatch(DisplayActions.AuthToggler())
     }
+    // const signNext = useSelector((state) => state.)
     return (
         <div className="wrapper">
-
-        
-        <div className= {active ? "Authentication active": "Authentication"} id = "Authentication">
+             <div className= {active ? "Authentication active": "Authentication"} id = "Authentication">
             <div className="form-container sign-up">
-                <form>
+                <div className="sign-form first-form">
+                     <form>
                     <h1>Create Account</h1>
                     <div className="socia-icons">
                         <a href="#" className="icon"></a>
@@ -28,11 +30,17 @@ const Login = () => {
                     <input type="text" placeholder="Name"/>
                     <input type="email" placeholder="Email"/>
                     <input type="password" placeholder="password"/>
-                    <button>Sign Up</button>
                 </form>
+                </div>
+                <div className="second-sign">
+
+                </div>
+               <a href="#" className="right-arrow">next <img src= {ArrowRight} alt="" /></a>
+
             </div>
             <div className="form-container sign-in">
-                <form >
+                <div className="log">
+                     <form >
                <h1>Sign In</h1>
                 <div className = "social-icons">
                     <a href="#" className = "icon"><i className = "fa-brands fa-google-plus-g"></i></a>
@@ -44,8 +52,10 @@ const Login = () => {
                 <input type="email" placeholder="Email"/>
                 <input type="password" placeholder="Password"/>
                 <a href="#">Forget Your Password?</a>
-                <button>Sign In</button>
+                <button>Log In</button>
                 </form>
+                </div>
+               
             </div>
             
             <div className="toggle-container">
@@ -57,7 +67,7 @@ const Login = () => {
                     </div>
                     <div className="toggle-panel toggle-right">
                         <h1>Suk</h1>
-                        <p>Discover More, Shop Smarter</p>
+                        <h5>Discover More, Shop Smarter</h5>
                         <p>Register Here!</p>
                         <button className="hidden" onClick = {AuthToggle}>
                             Sign Up
