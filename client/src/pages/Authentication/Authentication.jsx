@@ -32,7 +32,18 @@ const Login = () => {
                     <input type="password" placeholder="password"/>
                 </form>
                 </div>
-                <div className="second-sign">
+                <div className="sign-form second-form">
+                <form>
+                    <label>
+                        <input type="radio" name="Buyer" value="Buyer"/> Buyer
+                    </label>
+                    <label>
+                        <input type="radio" name="Seller" value="Seller"/> Seller
+                    </label>
+                    <label>
+                        <input type="radio" name="Both" value="Both"/> Both
+                    </label>
+                    </form>
 
                 </div>
                <a href="#" className="right-arrow">next <img src= {ArrowRight} alt="" /></a>
