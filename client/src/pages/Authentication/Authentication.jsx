@@ -5,8 +5,9 @@ import { DisplayActions } from "../../Store/DisplaySlice"
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled)
     const dispatch = useDispatch()
-    const AuthToggle = () => {
-        dispatch(DisplayActions.AuthToggler)
+    const AuthToggle = (e) => {
+        e.preventDefault()
+        dispatch(DisplayActions.AuthToggler())
     }
     return (
         <div className="wrapper">
@@ -52,7 +53,7 @@ const Login = () => {
                     <div className="toggle-panel toggle-left">
                         <h1>Welcome Back!</h1>
                         <p>Fill the Following fields</p>
-                        <button className="hidden" id="login">Sign In</button>
+                        <button className="hidden" onClick = {AuthToggle}>Sign In</button>
                     </div>
                     <div className="toggle-panel toggle-right">
                         <h1>Hello, Friend</h1>
