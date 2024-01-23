@@ -110,6 +110,9 @@
     display: flex;
     flex-direction: row;
 }
+.not {
+    display: none;
+}
 @keyframes move {
     0%, 49.99% {
         opacity: 0;

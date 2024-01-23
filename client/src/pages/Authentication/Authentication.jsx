@@ -7,6 +7,7 @@ import ArrowLeft from "../../assets/icons/arrow-left-long-solid.svg"
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled)
     const displayer = useSelector((state) => state.Display.signNo)
+    console.log(displayer);
     const dispatch = useDispatch()
     const AuthToggle = (e) => {
         e.preventDefault()
@@ -41,7 +42,7 @@ const Login = () => {
                     <input type="password" placeholder="password"/>
                 </form>
                 </div>
-                <div className={displayer === 1? "sign-form second-form": "second-form"}>
+                <div className={displayer === 1? "sign-form second-form": "not"}>
                     <h3>What is Your Nitche</h3>
                 <form>
                     <div className="radio">
@@ -60,11 +61,10 @@ const Login = () => {
                     <input type="text" placeholder="Name of the bank"/>
                     <input type="text" placeholder = "Account Number"/>
                     <br />
-            "sign-form third-form"
                 </form>
                 
                 </div>
-                <div className= {displayer === 2? "sign-form third-form": "third-form"}>
+                <div className= {displayer === 2? "sign-form third-form": "not"}>
                 <h3>Your Location</h3>
                     <input type="text" placeholder="Country"/>
                     <input type="text" placeholder = "City"/>
