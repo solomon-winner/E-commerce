@@ -23,6 +23,9 @@ export const AuthSlice = createSlice ({
         },
         signUp (state, action) {
 
+        },
+        handleChange (state, action) {
+            console.log(action)
         }
     }
 

@@ -3,11 +3,13 @@ import "./Authentication.css"
 import { DisplayActions } from "../../Store/DisplaySlice"
 import ArrowRight from "../../assets/icons/arrow-right-long-solid.svg"
 import ArrowLeft from "../../assets/icons/arrow-left-long-solid.svg"
+import { AuthActions } from "../../Store/AuthSlice"
 
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled)
     const displayer = useSelector((state) => state.Display.signNo)
-    console.log(displayer);
+    const UserData = useSelector((state) => state.Authentication[0])
+    console.log(UserData);
     const dispatch = useDispatch()
     const AuthToggle = (e) => {
         e.preventDefault()
@@ -21,6 +23,10 @@ const Login = () => {
         e.preventDefault();
         dispatch(DisplayActions.minuSignCount());
     }
+    const handleChange = (e) => {
+        e.preventDefault();
+        dispatch(AuthActions.handleChange([e.target.name, e.target.value]))
+    } 
     return (
         <div className="wrapper">
              <div className= {active ? "Authentication active": "Authentication"} id = "Authentication">
@@ -36,9 +42,9 @@ const Login = () => {
                     </div>
                     <span>Or use Your Email for Registration</span>
 
-                    <input type="text" placeholder="Name"/>
-                    <input type="email" placeholder="Email"/>
-                    <input type="password" placeholder="password"/>
+                    <input type="text" placeholder="Name" name="Name" onChange={handleChange}/>
+                    <input type="email" placeholder="Email"name="Email" onChange={handleChange}/>
+                    <input type="password" placeholder="password" name="Password" onChange={handleChange}/>
                 </form>
                 </div>
                 <div className={displayer === 1? "sign-form second-form": "not"}>
@@ -46,29 +52,29 @@ const Login = () => {
                 <form>
                     <div className="radio">
                         <label>
-                        <input type="radio" name="Buyer" value="Buyer"/> Buyer
+                        <input type="radio" name="Nitche" value="Buyer"/> Buyer
                     </label>
                     <label>
-                        <input type="radio" name="Seller" value="Seller"/> Seller
+                        <input type="radio" name="Nitche" value="Seller"/> Seller
                     </label>
                     <label>
-                        <input type="radio" name="Both" value="Both"/> Both
+                        <input type="radio" name="Nitche" value="Both"/> Both
                     </label>
                     </div>
                     <br />
                     <h3>Payment Information</h3>
-                    <input type="text" placeholder="Name of the bank"/>
-                    <input type="text" placeholder = "Account Number"/>
+                    <input type="text" placeholder="Name of the bank" name="Bank"/>
+                    <input type="text" placeholder = "Account Number" name="Bankaccount"/>
                     <br />
                 </form>
                 
                 </div>
                 <div className= {displayer === 2? "sign-form third-form": "not"}>
                 <h3>Your Location</h3>
-                    <input type="text" placeholder="Country"/>
-                    <input type="text" placeholder = "City"/>
-                    <input type="text" placeholder = "Subcity"/>
-                    <input type="text" placeholder="street"/>
+                    <input type="text" placeholder="Country" name = "Country"/>
+                    <input type="text" placeholder = "City" name = "City"/>
+                    <input type="text" placeholder = "Subcity" name = "subCity"/>
+                    <input type="text" placeholder="street" name="street"/>
                     <button>Sign Up</button>
                 </div>
                 { displayer > 0 && <a href="#" className="left-arrow" onClick={minuSign}><img src= {ArrowLeft} alt="" /> prev</a>}
