@@ -3,8 +3,9 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
+
 .Authentication {
     background-color: #fff;
     border-radius: 30px;
