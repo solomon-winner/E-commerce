@@ -18,7 +18,8 @@ export const AuthSlice = createSlice ({
         login:{
             Email: "",
             Password: ""
-        }
+        },
+        isLoggedIn: false,
     },
     reducers: {
         logIn (state, action) {
@@ -28,9 +29,9 @@ export const AuthSlice = createSlice ({
 
         },
         handleChange (state, action) {
-           // state.Authentication.signUp.action.payload[0] = action.payload[1];
-            console.log(state.Authentication.signUp);
-            console.log("......."+state.Authentication.signUp.action.payload[0]) 
+            state.signUp = action.payload;
+            console.log("...state..."+state.signUp);
+            console.log("...action...");
         }
     }
 

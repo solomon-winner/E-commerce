@@ -4,11 +4,24 @@ import { DisplayActions } from "../../Store/DisplaySlice"
 import ArrowRight from "../../assets/icons/arrow-right-long-solid.svg"
 import ArrowLeft from "../../assets/icons/arrow-left-long-solid.svg"
 import { AuthActions } from "../../Store/AuthSlice"
+import { useState } from "react"
 
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled)
     const displayer = useSelector((state) => state.Display.signNo)
-    const UserData = useSelector((state) => state.Authentication[0])
+    const UserData = useSelector((state) => state.Authentication.signUp)
+    const [inputs, setInputs] = useState({
+        Name: "",
+        Nitche: "",
+        Bank: "",
+        Bankaccount: "",
+        Password: "",
+        Email: "",
+        Country: "",
+        City: "",
+        subCity: "",
+        street: "",
+    });
     console.log(UserData);
     const dispatch = useDispatch()
     const AuthToggle = (e) => {
@@ -24,9 +37,12 @@ const Login = () => {
         dispatch(DisplayActions.minuSignCount());
     }
     const handleChange = (e) => {
-        e.preventDefault();
-        dispatch(AuthActions.handleChange([e.target.name, e.target.value]))
+        setInputs((prev) => ({...prev,[e.target.name]: e.target.value}))
     } 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        dispatch(AuthActions.handleChange(inputs))
+    }
     return (
         <div className="wrapper">
              <div className= {active ? "Authentication active": "Authentication"} id = "Authentication">
@@ -75,7 +91,7 @@ const Login = () => {
                     <input type="text" placeholder = "City" name = "City"/>
                     <input type="text" placeholder = "Subcity" name = "subCity"/>
                     <input type="text" placeholder="street" name="street"/>
-                    <button>Sign Up</button>
+                    <button onClick={handleSubmit}>Sign Up</button>
                 </div>
                 { displayer > 0 && <a href="#" className="left-arrow" onClick={minuSign}><img src= {ArrowLeft} alt="" /> prev</a>}
                {displayer < 2 && <a href="#" className="right-arrow" onClick={AddSign}>next <img src= {ArrowRight} alt="" /></a>}
