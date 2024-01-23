@@ -16,7 +16,7 @@ const Login = () => {
         <div className="wrapper">
              <div className= {active ? "Authentication active": "Authentication"} id = "Authentication">
             <div className="form-container sign-up">
-                <div className="sign-form first-form">
+                {/* <div className="sign-form first-form">
                      <form>
                     <h1>Create Account</h1>
                     <div className="socia-icons">
@@ -31,10 +31,12 @@ const Login = () => {
                     <input type="email" placeholder="Email"/>
                     <input type="password" placeholder="password"/>
                 </form>
-                </div>
+                </div> */}
                 <div className="sign-form second-form">
+                    <h3>What is Your Nitche</h3>
                 <form>
-                    <label>
+                    <div className="radio">
+                        <label>
                         <input type="radio" name="Buyer" value="Buyer"/> Buyer
                     </label>
                     <label>
@@ -43,7 +45,18 @@ const Login = () => {
                     <label>
                         <input type="radio" name="Both" value="Both"/> Both
                     </label>
-                    </form>
+                    </div>
+                    <br />
+                    <h3>Payment Information</h3>
+                    <input type="text" placeholder="Name of the bank"/>
+                    <input type="text" placeholder = "Account Number"/>
+                    <br />
+                    <h3>Your Location</h3>
+                    <input type="text" placeholder="Country"/>
+                    <input type="text" placeholder = "City"/>
+                    <input type="text" placeholder = "Subcity"/>
+                    <input type="text" placeholder="street"/>
+                </form>
 
                 </div>
                <a href="#" className="right-arrow">next <img src= {ArrowRight} alt="" /></a>
