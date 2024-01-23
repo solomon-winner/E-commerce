@@ -6,17 +6,26 @@ import ArrowLeft from "../../assets/icons/arrow-left-long-solid.svg"
 
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled)
+    const displayer = useSelector((state) => state.Display.signNo)
     const dispatch = useDispatch()
     const AuthToggle = (e) => {
         e.preventDefault()
         dispatch(DisplayActions.AuthToggler())
+    }
+    const AddSign = (e) => {
+        e.preventDefault();
+        dispatch(DisplayActions.addSignCount());
+    }
+    const minuSign = (e) => {
+        e.preventDefault();
+        dispatch(DisplayActions.minuSignCount());
     }
     // const signNext = useSelector((state) => state.)
     return (
         <div className="wrapper">
              <div className= {active ? "Authentication active": "Authentication"} id = "Authentication">
             <div className="form-container sign-up">
-                {/* <div className="sign-form first-form">
+                <div className={displayer === 0? "sign-form first-form": "first-form"}>
                      <form>
                     <h1>Create Account</h1>
                     <div className="socia-icons">
@@ -31,8 +40,8 @@ const Login = () => {
                     <input type="email" placeholder="Email"/>
                     <input type="password" placeholder="password"/>
                 </form>
-                </div> */}
-                {/* <div className="sign-form second-form">
+                </div>
+                <div className={displayer === 1? "sign-form second-form": "second-form"}>
                     <h3>What is Your Nitche</h3>
                 <form>
                     <div className="radio">
@@ -54,8 +63,8 @@ const Login = () => {
             "sign-form third-form"
                 </form>
                 
-                </div> */}
-                <div className= {displayer === 0? "sign-form third-form": "third-form"}>
+                </div>
+                <div className= {displayer === 2? "sign-form third-form": "third-form"}>
                 <h3>Your Location</h3>
                     <input type="text" placeholder="Country"/>
                     <input type="text" placeholder = "City"/>
@@ -63,7 +72,7 @@ const Login = () => {
                     <input type="text" placeholder="street"/>
                     <button>Sign Up</button>
                 </div>
-               <a href="#" className="right-arrow">next <img src= {ArrowRight} alt="" /></a>
+               <a href="#" className="right-arrow" onClick={AddSign}>next <img src= {ArrowRight} alt="" /></a>
 
             </div>
             <div className="form-container sign-in">
