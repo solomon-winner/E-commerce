@@ -34,9 +34,13 @@ export const DisplaySlice = createSlice({
         },
         DontDisplayWish (state, action) {
             state.isWishDisplayed = action.payload
-        }
+        },
 
         //this is for the Authtntication
+        AuthToggler (state, action) {
+            state.isAuthToggled = !state.isAuthToggled
+        }
+        
     }
 })
 export const DisplayActions = DisplaySlice.actions

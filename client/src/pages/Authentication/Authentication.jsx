@@ -1,16 +1,18 @@
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import "./Authentication.css"
+import { DisplayActions } from "../../Store/DisplaySlice"
 
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled)
+    const dispatch = useDispatch()
     const AuthToggle = () => {
-
+        dispatch(DisplayActions.AuthToggler)
     }
     return (
         <div className="wrapper">
 
         
-        <div className="Authentication" id = "Authentication">
+        <div className= {active ? "Authentication active": "Authentication"} id = "Authentication">
             <div className="form-container sign-up">
                 <form>
                     <h1>Create Account</h1>
