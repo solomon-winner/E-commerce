@@ -106,12 +106,17 @@
     border-radius: 10%;
     padding: 1em 1em;
 }
+.form-container .left-arrow {
+    position: absolute;
+    right:65%;
+}
 .second-form form .radio{
     display: flex;
     flex-direction: row;
 }
 .not {
-    display: none;
+   display: none;
+
 }
 @keyframes move {
     0%, 49.99% {

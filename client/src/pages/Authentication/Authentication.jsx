@@ -21,12 +21,11 @@ const Login = () => {
         e.preventDefault();
         dispatch(DisplayActions.minuSignCount());
     }
-    // const signNext = useSelector((state) => state.)
     return (
         <div className="wrapper">
              <div className= {active ? "Authentication active": "Authentication"} id = "Authentication">
             <div className="form-container sign-up">
-                <div className={displayer === 0? "sign-form first-form": "first-form"}>
+                <div className={displayer === 0? "sign-form first-form": "not"}>
                      <form>
                     <h1>Create Account</h1>
                     <div className="socia-icons">
@@ -72,8 +71,8 @@ const Login = () => {
                     <input type="text" placeholder="street"/>
                     <button>Sign Up</button>
                 </div>
-               <a href="#" className="right-arrow" onClick={AddSign}>next <img src= {ArrowRight} alt="" /></a>
-
+                { displayer > 0 && <a href="#" className="left-arrow" onClick={minuSign}><img src= {ArrowLeft} alt="" /> prev</a>}
+               {displayer < 2 && <a href="#" className="right-arrow" onClick={AddSign}>next <img src= {ArrowRight} alt="" /></a>}
             </div>
             <div className="form-container sign-in">
                 <div className="log">
