@@ -21,8 +21,7 @@ const Login = () => {
         City: "",
         subCity: "",
         street: "",
-    });
-    console.log(UserData);
+});
     const dispatch = useDispatch()
     const AuthToggle = (e) => {
         e.preventDefault()
@@ -42,6 +41,7 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(AuthActions.handleChange(inputs))
+        console.log("from the Authentication..."+ inputs.street)
     }
     return (
         <div className="wrapper">

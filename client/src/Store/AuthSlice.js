@@ -31,7 +31,7 @@ export const AuthSlice = createSlice ({
         handleChange (state, action) {
             state.signUp = action.payload;
             console.log("...state..."+state.signUp);
-            console.log("...action...");
+            console.log("...action..."+action.payload);
         }
     }
 
