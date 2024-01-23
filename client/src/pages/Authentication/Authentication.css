@@ -108,7 +108,13 @@
 }
 .form-container .left-arrow {
     position: absolute;
-    right:65%;
+    top: 87.5%;
+    right:70%;
+}
+.form-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .second-form form .radio{
     display: flex;
