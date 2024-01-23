@@ -1,7 +1,10 @@
-import "./login.css"
+import "./Authentication.css"
 
 const Login = () => {
     return (
+        <div className="wrapper">
+
+        
         <div className="Authentication" id = "Authentication">
             <div className="form-container sign-up">
                 <form>
@@ -53,6 +56,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
