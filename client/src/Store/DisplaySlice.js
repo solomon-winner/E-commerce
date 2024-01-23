@@ -7,6 +7,7 @@ export const DisplaySlice = createSlice({
         isCartDisplayed: false,
         isWishDisplayed: false,
         isAuthToggled: false,
+        signNo: 0,
     },
     reducers: {
         //this is for the departement menu
@@ -39,6 +40,12 @@ export const DisplaySlice = createSlice({
         //this is for the Authtntication
         AuthToggler (state, action) {
             state.isAuthToggled = !state.isAuthToggled
+        },
+        addSignCount(state, action) {
+            state.signNo++;
+        },
+        minuSignCount(state, action) {
+            state.signNo--;
         }
         
     }

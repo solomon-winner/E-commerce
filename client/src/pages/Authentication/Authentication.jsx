@@ -32,7 +32,7 @@ const Login = () => {
                     <input type="password" placeholder="password"/>
                 </form>
                 </div> */}
-                <div className="sign-form second-form">
+                {/* <div className="sign-form second-form">
                     <h3>What is Your Nitche</h3>
                 <form>
                     <div className="radio">
@@ -51,13 +51,17 @@ const Login = () => {
                     <input type="text" placeholder="Name of the bank"/>
                     <input type="text" placeholder = "Account Number"/>
                     <br />
-                    <h3>Your Location</h3>
+            "sign-form third-form"
+                </form>
+                
+                </div> */}
+                <div className= {displayer === 0? "sign-form third-form": "third-form"}>
+                <h3>Your Location</h3>
                     <input type="text" placeholder="Country"/>
                     <input type="text" placeholder = "City"/>
                     <input type="text" placeholder = "Subcity"/>
                     <input type="text" placeholder="street"/>
-                </form>
-
+                    <button>Sign Up</button>
                 </div>
                <a href="#" className="right-arrow">next <img src= {ArrowRight} alt="" /></a>
 
