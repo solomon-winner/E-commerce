@@ -30,19 +30,19 @@ export const AuthSlice = createSlice ({
 
         },
         async register (state, action) {
-            
+            console.log("register!")
            try {
-              await Request.post("/users", state.signUp);
-            state.isSignedUp = true
+              await Request.post("/auth", state.signUp);
             }catch(err){
                 state.error = err.response.data;
-            }             
+            }
+            
             
         },
         handleChange (state, action) {
             state.signUp = action.payload;
             console.log("...action..."+ Object.entries(action.payload));
-
+            state.isSignedUp = true
         }
     }
 
