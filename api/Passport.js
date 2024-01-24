@@ -1,7 +1,7 @@
 import passport from "passport";
 import { Strategy as JwtStrategy, ExtractJwt } from "passport-jwt";
 import Users from "./controllers/usersControl";
-import {jwtSecret} from './index'
+import {jwtSecret} from './config.js'
 
 const jwt = {
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
