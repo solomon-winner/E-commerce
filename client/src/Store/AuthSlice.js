@@ -20,6 +20,7 @@ export const AuthSlice = createSlice ({
             Password: ""
         },
         isLoggedIn: false,
+        isSignedUp: false,
     },
     reducers: {
         logIn (state, action) {
@@ -30,9 +31,11 @@ export const AuthSlice = createSlice ({
         },
         handleChange (state, action) {
             state.signUp = action.payload;
-            console.log("...state..."+state.signUp);
+            console.log("...state..."+state.isSignedUp);
             console.log("...action..."+ Object.entries(action.payload));
-            
+            state.isSignedUp = true
+            console.log("...state...after..."+state.isSignedUp);
+
         }
     }
 

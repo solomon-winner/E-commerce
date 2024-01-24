@@ -7,7 +7,9 @@ import { AuthActions } from "../../Store/AuthSlice"
 import { useState } from "react"
 
 const Login = () => {
-    const active = useSelector((state) => state.Display.isAuthToggled)
+    const active = useSelector((state) => state.Display.isAuthToggled) 
+    const IsSignUp =  useSelector ((state) => state.Authentication.isSignedUp);
+    console.log("from the authentication.JSX IS Signd UP"+IsSignUp);
     const displayer = useSelector((state) => state.Display.signNo)
     const UserData = useSelector((state) => state.Authentication.signUp)
     const [inputs, setInputs] = useState({
@@ -44,7 +46,7 @@ const Login = () => {
     }
     return (
         <div className="wrapper">
-             <div className= {active ? "Authentication active": "Authentication"} id = "Authentication">
+             <div className= {(active || IsSignUp)? "Authentication active": "Authentication"} id = "Authentication">
             <div className="form-container sign-up">
                 <div className={displayer === 0? "sign-form first-form": "not"}>
                      <form>
