@@ -42,6 +42,18 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(AuthActions.handleChange(inputs))
+        setInputs({
+            Name: "",
+            Nitche: "",
+            Bank: "",
+            Bankaccount: "",
+            Password: "",
+            Email: "",
+            Country: "",
+            City: "",
+            subCity: "",
+            street: "",
+    })
         dispatch(DisplayActions.AuthToggler())
     }
     return (
