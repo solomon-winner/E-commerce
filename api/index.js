@@ -6,7 +6,8 @@ import WishRoutes from "./routes/wish.js"
 import HistoryRoutes from "./routes/history.js"
 import cors from "cors";
 import cookieParser from "cookie-parser";
-
+import passport from "./Passport.js";
+import App from "../client/src/App.js";
 const app = express();
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Credentials", true);
@@ -19,7 +20,7 @@ app.use(cors({
 }));
 
 app.use(cookieParser());
-
+app.use(passport.initialize())
 app.use("/api/users", UserRoutes)
 app.use("/api/product", ProductRoutes)
 app.use("/api/products", ProductsRoutes)
