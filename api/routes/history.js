@@ -4,5 +4,6 @@ import {addHistory, getHistory} from "../controllers/historyControl.js"
 const router = express.Router();
 
 router.post("/",addHistory);
-router.get("/", getHistory)
+router.get("/", getHistory);
+
  export default router;
