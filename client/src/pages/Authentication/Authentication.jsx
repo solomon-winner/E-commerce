@@ -11,7 +11,6 @@ const Login = () => {
     const IsSignUp =  useSelector ((state) => state.Authentication.isSignedUp);
     console.log("from the authentication.JSX IS Signd UP"+IsSignUp);
     const displayer = useSelector((state) => state.Display.signNo)
-    const UserData = useSelector((state) => state.Authentication.signUp)
     const [inputs, setInputs] = useState({
         Name: "",
         Nitche: "",
