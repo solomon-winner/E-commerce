@@ -41,7 +41,6 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(AuthActions.handleChange(inputs))
-        console.log("from the Authentication..."+ inputs.street)
     }
     return (
         <div className="wrapper">
@@ -79,18 +78,18 @@ const Login = () => {
                     </div>
                     <br />
                     <h3>Payment Information</h3>
-                    <input type="text" placeholder="Name of the bank" name="Bank"/>
-                    <input type="text" placeholder = "Account Number" name="Bankaccount"/>
+                    <input type="text" placeholder="Name of the bank" name="Bank" onChange={handleChange}/>
+                    <input type="text" placeholder = "Account Number" name="Bankaccount" onChange={handleChange}/>
                     <br />
                 </form>
                 
                 </div>
                 <div className= {displayer === 2? "sign-form third-form": "not"}>
                 <h3>Your Location</h3>
-                    <input type="text" placeholder="Country" name = "Country"/>
-                    <input type="text" placeholder = "City" name = "City"/>
-                    <input type="text" placeholder = "Subcity" name = "subCity"/>
-                    <input type="text" placeholder="street" name="street"/>
+                    <input type="text" placeholder="Country" name = "Country" onChange={handleChange}/>
+                    <input type="text" placeholder = "City" name = "City" onChange={handleChange}/>
+                    <input type="text" placeholder = "Subcity" name = "subCity" onChange={handleChange}/>
+                    <input type="text" placeholder="street" name="street" onChange={handleChange}/>
                     <button onClick={handleSubmit}>Sign Up</button>
                 </div>
                 { displayer > 0 && <a href="#" className="left-arrow" onClick={minuSign}><img src= {ArrowLeft} alt="" /> prev</a>}
