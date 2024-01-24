@@ -6,6 +6,7 @@ import WishRoutes from "./routes/wish.js"
 import HistoryRoutes from "./routes/history.js"
 import cors from "cors";
 import cookieParser from "cookie-parser";
+import authRoutes from "./routes/authentication.js"
 // import passport from "./Passport.js";
 
 const app = express();
@@ -26,6 +27,7 @@ app.use("/api/product", ProductRoutes)
 app.use("/api/products", ProductsRoutes)
 app.use("/api/wish", WishRoutes)
 app.use("/api/history", HistoryRoutes)
+app.use("/api/auth", authRoutes)
 
 app.listen(8800, () => {
     console.log(" I am listening port 8800!")

@@ -1,4 +1,2 @@
-export const getUsers = () => {}
-export const addUsers = () => {}
-export const updateUsers = () => {}
-export const deleteUsers = () => {}
+export const getUser = () => {}
+export const updateUser = () => {}
