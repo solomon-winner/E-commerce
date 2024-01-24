@@ -43,10 +43,11 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(AuthActions.handleChange(inputs))
+        dispatch(DisplayActions.AuthToggler())
     }
     return (
         <div className="wrapper">
-             <div className= {(active || IsSignUp)? "Authentication active": "Authentication"} id = "Authentication">
+             <div className= {active ? "Authentication active": "Authentication"} id = "Authentication">
             <div className="form-container sign-up">
                 <div className={displayer === 0? "sign-form first-form": "not"}>
                      <form>
