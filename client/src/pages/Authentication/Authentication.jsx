@@ -8,8 +8,6 @@ import { useState } from "react"
 
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled) 
-    const IsSignUp =  useSelector ((state) => state.Authentication.isSignedUp);
-    console.log("from the authentication.JSX IS Signd UP"+IsSignUp);
     const displayer = useSelector((state) => state.Display.signNo)
     const [inputs, setInputs] = useState({
         Name: "",
