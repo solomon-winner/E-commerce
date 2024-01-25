@@ -29,13 +29,9 @@ export const AuthSlice = createSlice ({
         logIn (state, action) {
 
         },
-        async register (state, action) {
-            console.log("register!")
-           try {
-              await Request.post("/auth", state.signUp);
-            }catch(err){
-                state.error = err.response.data;
-            }
+         register (state, action) {
+            console.log("register!");
+           
             
             
         },

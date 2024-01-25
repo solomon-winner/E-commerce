@@ -9,7 +9,7 @@ import { useState } from "react"
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled) 
     const displayer = useSelector((state) => state.Display.signNo)
-   const isSignUp = useSelector((state) => state.Authentication.isSignedUp)
+//    const isSignUp = useSelector((state) => state.Authentication.isSignedUp)
     const [inputs, setInputs] = useState({
         Name: "",
         Nitche: "",
@@ -53,7 +53,8 @@ const Login = () => {
             subCity: "",
             street: "",
     })
-        if (isSignUp) dispatch(AuthActions.register())
+        // if (isSignUp) 
+        dispatch(AuthActions.register())
         dispatch(DisplayActions.AuthToggler())
 
     }
