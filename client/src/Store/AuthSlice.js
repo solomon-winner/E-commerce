@@ -18,7 +18,7 @@ export const AuthSlice = createSlice ({
         },
         login:{
             Email: "",
-            Password: ""
+            Password: "",
         },
         isLoggedIn: false,
         isSignedUp: false,
@@ -31,9 +31,7 @@ export const AuthSlice = createSlice ({
         },
          register (state, action) {
             console.log("register!");
-           
-            
-            
+            state.currentUser = action.payload;
         },
         handleChange (state, action) {
             state.signUp = action.payload;

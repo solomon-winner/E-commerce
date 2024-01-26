@@ -5,11 +5,13 @@ import ArrowRight from "../../assets/icons/arrow-right-long-solid.svg"
 import ArrowLeft from "../../assets/icons/arrow-left-long-solid.svg"
 import { AuthActions } from "../../Store/AuthSlice"
 import { useState } from "react"
+import { Request } from "../../Request"
 
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled) 
     const displayer = useSelector((state) => state.Display.signNo)
-//    const isSignUp = useSelector((state) => state.Authentication.isSignedUp)
+    const signData = useSelector((state) => state.Authentication.signUp)
+   const isSignUp = useSelector((state) => state.Authentication.isSignedUp)
     const [inputs, setInputs] = useState({
         Name: "",
         Nitche: "",
@@ -53,11 +55,15 @@ const Login = () => {
             subCity: "",
             street: "",
     })
-        // if (isSignUp) 
-        dispatch(AuthActions.register())
+        if (isSignUp) 
+        sign(signData);
         dispatch(DisplayActions.AuthToggler())
 
     }
+const sign = async(signData) => {
+                const res = await Request.post("/register",signData)
+                dispatch(AuthActions.register(res.data));
+            }
     return (
         <div className="wrapper">
              <div className= {active ? "Authentication active": "Authentication"} id = "Authentication">
