@@ -4,8 +4,10 @@ import { DisplayActions } from "../../Store/DisplaySlice"
 import ArrowRight from "../../assets/icons/arrow-right-long-solid.svg"
 import ArrowLeft from "../../assets/icons/arrow-left-long-solid.svg"
 import { AuthActions } from "../../Store/AuthSlice"
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { Request } from "../../Request"
+import AuthContext from "../../Context/AuthContext";
+import { Link ,useNavigate} from "react-router-dom"
 
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled) 
@@ -28,6 +30,7 @@ const [login, setLogin] = useState({
     Email: "",
     Password: ""
 })
+    const navigate = useNavigate();
     const dispatch = useDispatch()
     const AuthToggle = (e) => {
         e.preventDefault()
@@ -70,6 +73,17 @@ const [login, setLogin] = useState({
     }
     const handleLogin = (e) => {
         setLogin((prev) => ({...prev,[e.target.name]: e.target.value}))
+    }
+    const {user} = useContext(AuthContext);
+    const SubmitLogin = async (e) => {
+        e.preventDefault();
+        try {
+            await user (login);
+            navigate("/");
+        } catch (err) {
+            console.log(err.reponse);
+            dispatch(AuthActions.error(err.response.data))
+        }
     }
 
     return (
@@ -136,10 +150,10 @@ const [login, setLogin] = useState({
                     <a href="#" className = "icon"><i className = "fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email password</span>
-                <input type="email" placeholder="Email"/>
-                <input type="password" placeholder="Password"/>
+                <input type="email" placeholder="Email" onChange={handleLogin}/>
+                <input type="password" placeholder="Password" onChange={handleLogin}/>
                 <a href="#">Forget Your Password?</a>
-                <button>Log In</button>
+                <button onSubmit={SubmitLogin}>Log In</button>
                 </form>
                 </div>
                
