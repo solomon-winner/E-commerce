@@ -17,7 +17,7 @@ export const register = (req, res) => {
 
         const query = "INSERT INTO User (`Name`,`Nitche`,`Bank`,`Bankaccount`,`Password`,`Email`,`Country`,`City`,`subCity`,`street`) VALUES (?)"
         const values = [req.body.Name, req.body.Nitche, req.body.Bank,
-             req.body.Bankaccount, req.body.Password, req.body.Email, 
+             req.body.Bankaccount, hashedPassword, req.body.Email, 
              req.body.Country, req.body.City, req.body.subCity, 
              req.body.street]
              
