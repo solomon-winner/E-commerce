@@ -61,8 +61,10 @@ const Login = () => {
 
     }
 const sign = async(signData) => {
-                const res = await Request.post("/register",signData)
-                dispatch(AuthActions.register(res.data));
+    console.log("this is from the Authentication " + signData)
+                const res = await Request.post("/auth/register",signData)
+                // dispatch(AuthActions.register(res.data));
+                console.log("this is from the Authentication " + res.data)
             }
     return (
         <div className="wrapper">
