@@ -10,8 +10,8 @@ import { Request } from "../../Request"
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled) 
     const displayer = useSelector((state) => state.Display.signNo)
-    const signData = useSelector((state) => state.Authentication.signUp)
-   const isSignUp = useSelector((state) => state.Authentication.isSignedUp)
+    // const signData = useSelector((state) => state.Authentication.signUp)
+    // const isSignUp = useSelector((state) => state.Authentication.isSignedUp)
     const [inputs, setInputs] = useState({
         Name: "",
         Nitche: "",
@@ -24,6 +24,10 @@ const Login = () => {
         subCity: "",
         street: "",
 });
+const [login, setLogin] = useState({
+    Email: "",
+    Password: ""
+})
     const dispatch = useDispatch()
     const AuthToggle = (e) => {
         e.preventDefault()
@@ -42,10 +46,8 @@ const Login = () => {
     } 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        dispatch(AuthActions.handleChange(inputs))
 
         try {
-console.log("this is from the Authentication " + signData)
                 const res = await Request.post("/auth/register", inputs)
         } catch (err) {
             dispatch(AuthActions.error(err));
@@ -65,6 +67,9 @@ console.log("this is from the Authentication " + signData)
        
         dispatch(DisplayActions.AuthToggler())
 
+    }
+    const handleLogin = (e) => {
+        setLogin((prev) => ({...prev,[e.target.name]: e.target.value}))
     }
 
     return (

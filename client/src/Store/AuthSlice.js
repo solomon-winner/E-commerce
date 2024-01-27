@@ -29,10 +29,7 @@ export const AuthSlice = createSlice ({
         logIn (state, action) {
 
         },
-         register (state, action) {
-            console.log("register!");
-            state.currentUser = action.payload;
-        },
+         
         handleChange (state, action) {
             state.signUp = action.payload;
             console.log("...action..."+ Object.entries(action.payload));
