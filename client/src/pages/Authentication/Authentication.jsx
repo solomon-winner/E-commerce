@@ -7,7 +7,7 @@ import { AuthActions } from "../../Store/AuthSlice"
 import { useContext, useState } from "react"
 import { Request } from "../../Request"
 import AuthContext from "../../Context/AuthContext";
-import { Link ,useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled) 
