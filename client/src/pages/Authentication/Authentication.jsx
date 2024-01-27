@@ -40,9 +40,16 @@ const Login = () => {
     const handleChange = (e) => {
         setInputs((prev) => ({...prev,[e.target.name]: e.target.value}))
     } 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         dispatch(AuthActions.handleChange(inputs))
+
+        try {
+console.log("this is from the Authentication " + signData)
+                const res = await Request.post("/auth/register", inputs)
+        } catch (err) {
+            dispatch(AuthActions.error(err));
+        }
         setInputs({
             Name: "",
             Nitche: "",
@@ -55,17 +62,11 @@ const Login = () => {
             subCity: "",
             street: "",
     })
-        if (isSignUp) 
-        sign(signData);
+       
         dispatch(DisplayActions.AuthToggler())
 
     }
-const sign = async(signData) => {
-    console.log("this is from the Authentication " + signData)
-                const res = await Request.post("/auth/register",signData)
-                // dispatch(AuthActions.register(res.data));
-                console.log("this is from the Authentication " + res.data)
-            }
+
     return (
         <div className="wrapper">
              <div className= {active ? "Authentication active": "Authentication"} id = "Authentication">
