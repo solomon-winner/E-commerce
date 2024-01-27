@@ -27,7 +27,8 @@ export const AuthSlice = createSlice ({
     },
     reducers: {
         logIn (state, action) {
-
+            state.isLoggedIn = true;
+            state.currentUser = action.payload;
         },
          
         handleChange (state, action) {
