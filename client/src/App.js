@@ -7,7 +7,8 @@ import {
       Routes,
       Route,
       Navigate,
-      createBrowserRouter} from "react-router-dom";
+      createBrowserRouter,
+      RouterProvider} from "react-router-dom";
 import Authentication from "./pages/Authentication/Authentication"
 import { useContext } from 'react';
 import { Context } from './Context/AuthContext';
@@ -19,7 +20,7 @@ function App() {
 
 const ProtectedRoute = ({children}) => {
   if (!current) {
-    return <Navigate to = "/login" />
+    return <Navigate to = "/Authentication" />
   }
   return children;
 }
@@ -32,7 +33,24 @@ const router = createBrowserRouter([
 
       </ProtectedRoute>
     ),
-    children: []
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/profile/:id",
+        element: <Profile/>,
+      },
+    ]
+  },
+  {
+    path: "/Authentication",
+    element: <Authentication/>
+  },
+  {
+    path: "/product",
+    element: <AboutProduct/>,
   }
 ])
   
@@ -44,8 +62,7 @@ const router = createBrowserRouter([
   //   <Route path = '/profile' element = {<Profile/>}/>
   //  </Routes>
   //  </BrowserRouter>
-  <Authentication/>
-
+  <RouterProvider router = {router} />
   );
 }
 
