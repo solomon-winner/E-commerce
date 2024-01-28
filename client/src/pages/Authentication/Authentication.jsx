@@ -78,7 +78,7 @@ const [login, setLogin] = useState({
     const SubmitLogin = async (e) => {
         e.preventDefault();
         try {
-            await user (login);
+            await user(login);
             navigate("/");
         } catch (err) {
             console.log(err.reponse);
