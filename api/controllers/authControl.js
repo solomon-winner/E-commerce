@@ -3,7 +3,15 @@ import bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken"
 
 export const login = (req, res) => {
-    
+    const query = "SELECT * FROM User where Email = ?"
+    db.query(query, [req.body.Email], (err, data) => {
+        if (err) return res.status(500).json(err);
+        if (data.length === 0) return res.status(404).json("User Not Found!");
+
+        const compare = bcrypt.compareSync( req.body.Password, data[0].Password);
+         if (!compare) 
+         return res.status(400).json("Wrong Email or Password!");
+    })
 }
 export const register = (req, res) => {
     const query = "SELECT * FROM User WHERE Email = ?"
