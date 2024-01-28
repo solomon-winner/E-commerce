@@ -11,8 +11,16 @@ export const login = (req, res) => {
         const compare = bcrypt.compareSync( req.body.Password, data[0].Password);
          if (!compare) 
          return res.status(400).json("Wrong Email or Password!");
-    })
+
+         const token = jwt.sign({id: data[0].id}, "secretkey");
+
+         const {Password, ...others} = data[0];
+
+         res.cookie("remember", token,{expires: new Date(Date.now() + 1000000000000000), httpOnly: true})
+         .status(200).json(others);
+        })
 }
+
 export const register = (req, res) => {
     const query = "SELECT * FROM User WHERE Email = ?"
     const email = req.body.Email;
