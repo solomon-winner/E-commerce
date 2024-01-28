@@ -3,21 +3,24 @@ import AboutProduct from './pages/AboutPoduct/AboutProduct';
 import Home from "./pages/Home/home";
 import Profile from "./pages/profile/Profile"
 import {
-      BrowserRouter,
-      Routes,
-      Route,
       Navigate,
       createBrowserRouter,
-      RouterProvider} from "react-router-dom";
+      RouterProvider,
+      Outlet} from "react-router-dom";
 import Authentication from "./pages/Authentication/Authentication"
 import { useContext } from 'react';
 import { Context } from './Context/AuthContext';
-// import {QueryClient, QueryClientProvider} from "@tanstack/react-query"
+ import {QueryClient, QueryClientProvider} from "@tanstack/react-query"
 function App() {
  const {current} = useContext(Context);
  
-//  const queryClient = new QueryClient();
+  const queryClient = new QueryClient();
 
+const Layout = () => {
+<QueryClientProvider client={queryClient}>
+<Outlet/>
+</QueryClientProvider>
+}
 const ProtectedRoute = ({children}) => {
   if (!current) {
     return <Navigate to = "/Authentication" />
@@ -30,7 +33,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <ProtectedRoute>
-
+        <Layout/>
       </ProtectedRoute>
     ),
     children: [
