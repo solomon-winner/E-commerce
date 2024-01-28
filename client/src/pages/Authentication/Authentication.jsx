@@ -13,7 +13,7 @@ const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled) 
     const displayer = useSelector((state) => state.Display.signNo)
     // const signData = useSelector((state) => state.Authentication.signUp)
-    // const isSignUp = useSelector((state) => state.Authentication.isSignedUp)
+    const Current = useSelector((state) => state.Authentication.currentUser)
     const [inputs, setInputs] = useState({
         Name: "",
         Nitche: "",
@@ -84,6 +84,7 @@ const [login, setLogin] = useState({
             console.log(err.reponse);
             dispatch(AuthActions.error(err.response.data))
         }
+        console.log(Current)
     }
 
     return (
@@ -109,6 +110,7 @@ const [login, setLogin] = useState({
                 <div className={displayer === 1? "sign-form second-form": "not"}>
                     <h3>What is Your Nitche</h3>
                 <form>
+                
                     <div className="radio">
                         <label>
                         <input type="radio" name="Nitche" value="Buyer" onChange={handleChange}/> Buyer
