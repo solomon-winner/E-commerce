@@ -6,7 +6,7 @@ import ArrowLeft from "../../assets/icons/arrow-left-long-solid.svg"
 import { AuthActions } from "../../Store/AuthSlice"
 import { useContext, useState } from "react"
 import { Request } from "../../Request"
-import AuthContext from "../../Context/AuthContext";
+import {Context} from "../../Context/AuthContext";
 import {useNavigate} from "react-router-dom"
 
 const Login = () => {
@@ -74,7 +74,7 @@ const [login, setLogin] = useState({
     const handleLogin = (e) => {
         setLogin((prev) => ({...prev,[e.target.name]: e.target.value}))
     }
-    const {user} = useContext(AuthContext);
+    const {user} = useContext(Context);
     const SubmitLogin = async (e) => {
         e.preventDefault();
         try {
