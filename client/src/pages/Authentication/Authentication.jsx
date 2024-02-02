@@ -77,10 +77,8 @@ const [login, setLogin] = useState({
     const {user} = useContext(Context);
     const SubmitLogin = async (e) => {
         e.preventDefault();
-        console.log("meslot neber telate wedke yemker..."+login)
 
         try {
-            console.log("meslot neber telate wedke yemker"+login)
             await user(login);
             navigate("/");
         } catch (err) {
