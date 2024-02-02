@@ -13,8 +13,8 @@ import { useContext } from 'react';
 import { Context } from './Context/AuthContext';
  import {QueryClient, QueryClientProvider} from "@tanstack/react-query"
 function App() {
- const {current} = useContext(Context);
- 
+ const current = useContext(state.Authentication.currentUser);
+ console.log(current);
   const queryClient = new QueryClient();
 
 const Layout = () => {
