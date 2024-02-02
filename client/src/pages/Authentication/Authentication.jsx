@@ -77,7 +77,10 @@ const [login, setLogin] = useState({
     const {user} = useContext(Context);
     const SubmitLogin = async (e) => {
         e.preventDefault();
+        console.log("meslot neber telate wedke yemker..."+login)
+
         try {
+            console.log("meslot neber telate wedke yemker"+login)
             await user(login);
             navigate("/");
         } catch (err) {
@@ -156,7 +159,7 @@ const [login, setLogin] = useState({
                 <input type="email" placeholder="Email" onChange={handleLogin}/>
                 <input type="password" placeholder="Password" onChange={handleLogin}/>
                 <a href="#">Forget Your Password?</a>
-                <button onSubmit={SubmitLogin}>Log In</button>
+                <button onClick={SubmitLogin}>Log In</button>
                 </form>
                 </div>
                
