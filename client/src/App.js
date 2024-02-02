@@ -10,7 +10,7 @@ import {
       Outlet} from "react-router-dom";
 import Authentication from "./pages/Authentication/Authentication"
 import { useContext } from 'react';
-import { Context, ContextProvider} from './Context/AuthContext';
+import { Context} from './Context/AuthContext';
  import {QueryClient, QueryClientProvider} from "@tanstack/react-query"
 function App() {
  const {current} = useContext(Context);
@@ -24,7 +24,7 @@ const Layout = () => {
 
 }
 const ProtectedRoute = ({children}) => {
-  if (current === null) {
+  if (!current) {
     return <Navigate to = "/Authentication" />
   }
   return children;
