@@ -17,60 +17,23 @@ function App() {
  
   const queryClient = new QueryClient();
 
-// const Layout = () => {
-//   return (
-//     <QueryClientProvider client={queryClient}>
-// <Outlet/>
-// </QueryClientProvider>
-//   )
+const Layout = () => {
+  return (
+    <QueryClientProvider client={queryClient}>
+<Outlet/>
+</QueryClientProvider>
+  )
 
-//}
+}
 const ProtectedRoute = ({children}) => {
   if (!current) {
     return <Navigate to = "/Authentication" />
   }
   return children;
 }
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: (
-//       <ProtectedRoute>
-//         <Layout/>
-//       </ProtectedRoute>
-//     ),
-//     children: [
-//       {
-//         path: "/",
-//         element: <Home />,
-//       },
-//       {
-//         path: "/profile/:id",
-//         element: <Profile/>,
-//       },
-//     ]
-//   },
-//   {
-//     path: "/Authentication",
-//     element: <Authentication/>
-//   },
-//   {
-//     path: "/product",
-//     element: <AboutProduct/>,
-//   }
-// ])
-  
+ 
   return (
-  //  <BrowserRouter>
-  //  <Routes>
-  //   <Route path='/' element = {<Home/>}/>
-  //   <Route path='/product' element = {<AboutProduct/>}/>
-  //   <Route path = '/profile' element = {<Profile/>}/>
-  //  </Routes>
-  //  </BrowserRouter>
-  // <RouterProvider router = {router} />
-  // <RouterProvider router={router}/>
+  
   <QueryClientProvider client={queryClient}>
     <Router>
       <Routes>
@@ -78,11 +41,15 @@ const ProtectedRoute = ({children}) => {
         path='/'
         element = {
           <ProtectedRoute>
-            <Home/>
+            <Layout/>
           </ProtectedRoute>
         }
         />
 
+        <Route path = '/' element = {<Home/>} />
+        <Route path='/profile/:id' element = {<Profile/>} />
+        <Route path='/Authentication' element = {<Authentication/>} />
+        <Route path = '/product' element = {<AboutProduct/>} />
         
       </Routes>
     </Router>
