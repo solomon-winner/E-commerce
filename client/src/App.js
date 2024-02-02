@@ -17,12 +17,12 @@ function App() {
  
   const queryClient = new QueryClient();
 
-const Layout = () => {
-  return (
-<Outlet/>
-  )
+// const Layout = () => {
+//   return (
+// <Outlet/>
+//   )
 
-}
+// }
 const ProtectedRoute = ({children}) => {
   if (!current) {
     return <Navigate to = "/Authentication" />
@@ -39,12 +39,12 @@ const ProtectedRoute = ({children}) => {
         path='/'
         element = {
           <ProtectedRoute>
-            <Layout/>
+            <Home/>
           </ProtectedRoute>
         }
         />
 
-        <Route path = '/' element = {<Home/>} />
+        {/* <Route path = '/' element = {<Home/>} /> */}
         <Route path='/profile/:id' element = {<Profile/>} />
         <Route path='/Authentication' element = {<Authentication/>} />
         <Route path = '/product' element = {<AboutProduct/>} />

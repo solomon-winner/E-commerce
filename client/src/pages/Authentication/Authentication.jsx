@@ -12,7 +12,7 @@ import {useNavigate} from "react-router-dom"
 const Login = () => {
     const active = useSelector((state) => state.Display.isAuthToggled) 
     const displayer = useSelector((state) => state.Display.signNo)
-    // const signData = useSelector((state) => state.Authentication.signUp)
+     const error = useSelector((state) => state.Authentication.error)
     const Current = useSelector((state) => state.Authentication.currentUser)
     const [inputs, setInputs] = useState({
         Name: "",
@@ -83,6 +83,7 @@ const [login, setLogin] = useState({
         } catch (err) {
             console.log(err.reponse);
             dispatch(AuthActions.error(err.response.data))
+            
         }
         console.log(Current)
     }
