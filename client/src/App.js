@@ -24,7 +24,7 @@ const Layout = () => {
 
 }
 const ProtectedRoute = ({children}) => {
-  if (!current) {
+  if (current === null) {
     return <Navigate to = "/Authentication" />
   }
   return children;
