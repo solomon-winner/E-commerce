@@ -23,7 +23,7 @@ export const AuthSlice = createSlice ({
         isLoggedIn: false,
         isSignedUp: false,
         error: null,
-        currentUser: JSON.parse(localStorage.getItem("user")) || null
+        currentUser: JSON.parse(localStorage.getItem("remember")) || null
     },
     reducers: {
         logIn (state, action) {
