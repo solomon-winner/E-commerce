@@ -12,8 +12,11 @@ import Authentication from "./pages/Authentication/Authentication"
 import { useContext } from 'react';
 import { Context } from './Context/AuthContext';
  import {QueryClient, QueryClientProvider} from "@tanstack/react-query"
+import { useSelector } from 'react-redux';
 function App() {
- const current = useContext(state.Authentication.currentUser);
+  const user = useSelector((state) => state.Authentication.currentUser) ;
+  console.log(user);
+ const current = useContext(user);
  console.log(current);
   const queryClient = new QueryClient();
 
