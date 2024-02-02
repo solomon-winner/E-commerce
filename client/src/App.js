@@ -74,6 +74,15 @@ const ProtectedRoute = ({children}) => {
   <QueryClientProvider client={queryClient}>
     <Router>
       <Routes>
+        <Route 
+        path='/'
+        element = {
+          <ProtectedRoute>
+            <Home/>
+          </ProtectedRoute>
+        }
+        />
+
         
       </Routes>
     </Router>
