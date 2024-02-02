@@ -10,6 +10,7 @@ export const ContextProvider = ({children}) => {
    const dispatch = useDispatch();
    
     const user = async (inputs) => {
+        console.log("check..." + inputs)
     const res = await Request.post("/auth/login", inputs)
     dispatch(AuthActions.logIn(res.data));
 } 
