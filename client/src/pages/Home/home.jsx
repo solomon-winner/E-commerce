@@ -16,7 +16,7 @@ const Home = () => {
 
 return (<div className="home">
 <Nav/>
- <Banner images = {images} Message = "Shoes Fashion"/>
+ <Banner images = {Image1} Message = "Shoes Fashion"/>
  <Sponsers/>
  <Trending/>
  <Products/>

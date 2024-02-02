@@ -17,9 +17,12 @@ function App() {
   const queryClient = new QueryClient();
 
 const Layout = () => {
-<QueryClientProvider client={queryClient}>
+  return (
+    <QueryClientProvider client={queryClient}>
 <Outlet/>
 </QueryClientProvider>
+  )
+
 }
 const ProtectedRoute = ({children}) => {
   if (!current) {
@@ -65,7 +68,8 @@ const router = createBrowserRouter([
   //   <Route path = '/profile' element = {<Profile/>}/>
   //  </Routes>
   //  </BrowserRouter>
-  <RouterProvider router = {router} />
+  // <RouterProvider router = {router} />
+  <Home/>
   );
 }
 
