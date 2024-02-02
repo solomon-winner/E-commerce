@@ -69,7 +69,7 @@ const router = createBrowserRouter([
   //  </Routes>
   //  </BrowserRouter>
   // <RouterProvider router = {router} />
-  <Home/>
+  <RouterProvider router={router}/>
   );
 }
 
