@@ -10,7 +10,7 @@ import {
       Outlet} from "react-router-dom";
 import Authentication from "./pages/Authentication/Authentication"
 import { useContext } from 'react';
-import { Context } from './Context/AuthContext';
+import { Context, ContextProvider} from './Context/AuthContext';
  import {QueryClient, QueryClientProvider} from "@tanstack/react-query"
 function App() {
  const {current} = useContext(Context);
